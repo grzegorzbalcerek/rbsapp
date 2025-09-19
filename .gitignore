@@ -2,3 +2,4 @@ viewer*.html
 *.txt
 delete.me
 *.swp
+__pycache__/
