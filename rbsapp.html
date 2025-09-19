@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js"></script>
+  </head>
+  <body id="body" onload="initRbsApp()">
+    <div id="toppanel" class="flexrow">
+      <div class="flexcolumn">
+        <!-- 1st toolbar -->
+        <div class="flexrow topbar">
+          <select id="langselect" onclick="langSelected()" title="Select language langSelected()"> </select>
+          <button onclick="restorePrevLang()" title="restorePrevLang()">&#x21b6;</button>
+          <label>&#x2610;</label>
+          <input id="showemptywordscheckbox" type="checkbox" onclick="checkShowEmptyWords()" title="Show empty words checkShowEmptyWords()">
+          <div class="rowitemsseparator"></div>
+          <select id="levelselect" onclick="levelSelected()" title="Select level levelSelected()"> </select>
+          <button onclick="levelUp()" title="levelUp()">&#x2191;</button>
+          <button onclick="levelDown()" title="levelDown()">&#x2193;</button>
+          <label>&#x2190;&#x2192;</label>
+          <input id="spreadcheckbox" type="checkbox" onclick="spreadCheckboxSelected()" title="spreadCheckboxSelected()">
+          <label>&#x1f5cf;</label>
+          <input id="summarycheckbox" type="checkbox" onclick="summaryCheckboxSelected()" title="summaryCheckboxSelected()">
+          <div class="rowitemsseparator"></div>
+          <select id="fontsizeselect" onclick="onFontSizeUpdate()" title="Select the font size onFontSizeUpdate()">
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11" selected="true">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+          </select>
+          <button onclick="increaseFontSize()" title="Increase the font size increaseFontSize()">&#x2191;</button>
+          <button onclick="decreaseFontSize()" title="Decrease the font size decreaseFontSize()">&#x2193;</button>
+          <div class="rowitemsseparator"></div>
+          <select id="termsizeselect" onclick="onTermSizeUpdate()" title="Select the term width onTermSizeUpdate()">
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16" selected="true">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+          </select>
+          <button onclick="decreaseTermSize()" title="decreaseTermSize()">&#x2190;</button>
+          <button onclick="increaseTermSize()" title="increaseTermSize()">&#x2192;</button>
+          <div class="rowitemsseparator"></div>
+          <button onclick="copySelection()" title="copySelection()">&#x1f5d0;</button>
+          <button onclick="copyDocument()" title="copyDocument()">&#x249e;</button>
+          <button onclick="pasteDocument()" title="pasteDocument()">&#x24b1;</button>
+          <button onclick="storageSaveDocumentAs()" title="storageSaveDocumentAs()">&#x1f5ab;&#x2193;</button>
+          <button onclick="storageRemoveDocument()" title="storageRemoveDocument()">&#x2573;</button>
+          <button onclick="storageLoadDocument()" title="storageLoadDocument()">&#x2b6e;</button>
+          <button onclick="storageSaveDocument()" title="storageSaveDocument()">&#x1f5ab;</button>
+          <div class="rowitemsseparator"></div>
+          <select id="documentsselect" onclick="storageLoadDocument()" title="storageLoadDocument()"> </select>
+        </div>
+        <!-- 2nd toolbar -->
+        <div class="flexrow topbar">
+          <button onclick="makeVisibleAll()" title="makeVisibleAll() Make visible the whole document">&#x2611;&#x2611;</button>
+          <button onclick="makeVisibleSubset()" title="makeVisibleSubset() Make visible the current selection">&#x2610;&#x2611;</button>
+          <div class="rowitemsseparator"></div>
+          <button onclick="addStrongToInput()" title="addStrongToInput()">G</button>
+          <button onclick="addSelectionBegToInput()" title="addSelectionBegToInput()">&#x2987;</button>
+          <button onclick="addSelectionToInput()" title="addSelectionToInput()">&#x2610;</button>
+          <button onclick="addSelectionEndToInput()" title="addSelectionEndToInput()">&#x2988;</button>
+          <input id="rangesinput" title="Some input">
+          <button onclick="eraseInput()" title="eraseInput()">&#x232b;</button>
+          <button onclick="eraseAndForgetInput()" title="eraseAndForgetInput()">&#x2327;</button>
+          <button id="recoverinputbutton" onclick="recoverInput()">&#x2b8c;</button>
+          <div class="rowitemsseparator"></div>
+          <button id="button_case" class="square" onclick="clickAction('case')" title="clickAction('case')">&#x1f5db;</button>
+          <div class="rowitemsseparator"></div>
+          <button id="button_punctuation„|" onclick="clickAction('punctuation„|')" title="clickAction('punctuation„|')">„</button>
+          <button id="button_punctuation“|" onclick="clickAction('punctuation“|')" title="clickAction('punctuation“|')">“</button>
+          <button id="button_punctuation«|" onclick="clickAction('punctuation«|')" title="clickAction('punctuation«|')">«</button>
+          <button id="button_punctuation_|" onclick="clickAction('punctuation_|')" title="clickAction('punctuation_|')"></button>
+          <div class="rowitemsseparator"></div>
+          <button id="button_punctuation|" class="square" onclick="clickAction('punctuation|')" title="clickAction('punctuation|')"></button>
+          <div class="rowitemsseparator"></div>
+          <button id="button_punctuation|_" onclick="clickAction('punctuation|_')" title="clickAction('punctuation|_')"></button>
+          <button id="button_punctuation|," onclick="clickAction('punctuation|,')" title="clickAction('punctuation|,')">,</button>
+          <button id="button_punctuation|:" onclick="clickAction('punctuation|:')" title="clickAction('punctuation|:')">:</button>
+          <button id="button_punctuation|." onclick="clickAction('punctuation|.')" title="clickAction('punctuation|.')">.</button>
+          <button id="button_punctuation|!" onclick="clickAction('punctuation|!')" title="clickAction('punctuation|!')">!</button>
+          <button id="button_punctuation|?" onclick="clickAction('punctuation|?')" title="clickAction('punctuation|?')">?</button>
+          <button id="button_punctuation|”" onclick="clickAction('punctuation|”')" title="clickAction('punctuation|”')">”</button>
+          <button id="button_punctuation|”." onclick="clickAction('punctuation|”.')" title="clickAction('punctuation|”.')">”.</button>
+          <button id="button_punctuation|!”." onclick="clickAction('punctuation|!”.')" title="clickAction('punctuation|!”.')">!”.</button>
+          <button id="button_punctuation|?”." onclick="clickAction('punctuation|?”.')" title="clickAction('punctuation|?”.')">?”.</button>
+          <button id="button_punctuation|»" onclick="clickAction('punctuation|»')" title="clickAction('punctuation|»')">»</button>
+          <button id="button_punctuation|»," onclick="clickAction('punctuation|»,')" title="clickAction('punctuation|»,')">»,</button>
+          <button id="button_punctuation|»”." onclick="clickAction('punctuation|»”.')" title="clickAction('punctuation|»”.')">»”.</button>
+          <button id="button_punctuation|»!”" onclick="clickAction('punctuation|»!”')" title="clickAction('punctuation|»!”')">»!”</button>
+          <button id="button_punctuation|»?”" onclick="clickAction('punctuation|»?”')" title="clickAction('punctuation|»?”')">»?”</button>
+        </div>
+        <!-- 3rd,4th toolbars container -->
+        <div class="flexrow topbar">
+          <!-- 3rd,4th toolbars: 1st column (buttons) -->
+          <div class="flexcolumn topbar">
+            <!-- 3rd toolbar -->
+            <div class="flexrow topbar">
+              <button id="button_colorfa" class="square" onclick="clickMarker('colorfa')" title="clickMarker('colorfa')">a</button>
+              <button id="button_colorfb" class="square" onclick="clickMarker('colorfb')" title="clickMarker('colorfb')">b</button>
+              <button id="button_colorfc" class="square" onclick="clickMarker('colorfc')" title="clickMarker('colorfc')">c</button>
+              <button id="button_colorfd" class="square" onclick="clickMarker('colorfd')" title="clickMarker('colorfd')">d</button>
+              <button id="button_colorfe" class="square" onclick="clickMarker('colorfe')" title="clickMarker('colorfe')">e</button>
+              <button id="button_colorff" class="square" onclick="clickMarker('colorff')" title="clickMarker('colorff')">f</button>
+              <button id="button_colorfg" class="square" onclick="clickMarker('colorfg')" title="clickMarker('colorfg')">g</button>
+              <button id="button_colorfh" class="square" onclick="clickMarker('colorfh')" title="clickMarker('colorfh')">h</button>
+              <button id="button_colorfi" class="square" onclick="clickMarker('colorfi')" title="clickMarker('colorfi')">i</button>
+              <button id="button_colorfj" class="square" onclick="clickMarker('colorfj')" title="clickMarker('colorfj')">j</button>
+              <button id="button_colorfk" class="square" onclick="clickMarker('colorfk')" title="clickMarker('colorfk')">k</button>
+              <button id="button_colorfl" class="square" onclick="clickMarker('colorfl')" title="clickMarker('colorfl')">l</button>
+              <button id="button_colorfm" class="square" onclick="clickMarker('colorfm')" title="clickMarker('colorfm')">m</button>
+              <button id="button_colorfn" class="square" onclick="clickMarker('colorfn')" title="clickMarker('colorfn')">n</button>
+              <button id="button_colorfo" class="square" onclick="clickMarker('colorfo')" title="clickMarker('colorfo')">o</button>
+              <button id="button_colorfp" class="square" onclick="clickMarker('colorfp')" title="clickMarker('colorfp')">p</button>
+              <button id="button_colorfq" class="square" onclick="clickMarker('colorfq')" title="clickMarker('colorfq')">q</button>
+              <button id="button_colorfr" class="square" onclick="clickMarker('colorfr')" title="clickMarker('colorfr')">r</button>
+              <button id="button_nocolorf" class="square" onclick="clickMarker('nocolorf')" title="clickMarker('nocolorf')">-</button>
+              <div class="rowitemsseparator"></div>
+              <button id="button_bold" class="square bold" onclick="clickMarker('bold')" title="clickMarker('bold')">b</button>
+              <button id="button_italic" class="square italic" onclick="clickMarker('italic')" title="clickMarker('italic')">i</button>
+              <button id="button_smallcaps" class="square smallcaps" onclick="clickMarker('smallcaps')" title="clickMarker('smallcaps')">sc</button>
+              <div class="rowitemsseparator"></div>
+              <button id="button_lock" class="square" onclick="clickMode('lock')" title="clickMode('lock')">&#x26bf;</button>
+              <button id="button_memorizelocker" class="square" onclick="memorizeLocker()" title="memorizeLocker()">m</button>
+              <button id="button_replace" class="square" onclick="replace()" title="replace()">r</button>
+              <div class="rowitemsseparator"></div>
+              <button id="rmacbutton" onclick="clickRmac()" title="clickRmac()">mor</button>
+              <button id="snbutton" class="square" onclick="clickSn()" title="clickSn()">G</button>
+            </div>
+            <!-- 4th toolbar -->
+            <div class="flexrow topbar">
+              <button id="button_colorba" class="square" onclick="clickMarker('colorba')" title="clickMarker('colorba')">a</button>
+              <button id="button_colorbb" class="square" onclick="clickMarker('colorbb')" title="clickMarker('colorbb')">b</button>
+              <button id="button_colorbc" class="square" onclick="clickMarker('colorbc')" title="clickMarker('colorbc')">c</button>
+              <button id="button_colorbd" class="square" onclick="clickMarker('colorbd')" title="clickMarker('colorbd')">d</button>
+              <button id="button_colorbe" class="square" onclick="clickMarker('colorbe')" title="clickMarker('colorbe')">e</button>
+              <button id="button_colorbf" class="square" onclick="clickMarker('colorbf')" title="clickMarker('colorbf')">f</button>
+              <button id="button_colorbg" class="square" onclick="clickMarker('colorbg')" title="clickMarker('colorbg')">g</button>
+              <button id="button_colorbh" class="square" onclick="clickMarker('colorbh')" title="clickMarker('colorbh')">h</button>
+              <button id="button_colorbi" class="square" onclick="clickMarker('colorbi')" title="clickMarker('colorbi')">i</button>
+              <button id="button_colorbj" class="square" onclick="clickMarker('colorbj')" title="clickMarker('colorbj')">j</button>
+              <button id="button_colorbk" class="square" onclick="clickMarker('colorbk')" title="clickMarker('colorbk')">k</button>
+              <button id="button_colorbl" class="square" onclick="clickMarker('colorbl')" title="clickMarker('colorbl')">l</button>
+              <button id="button_colorbm" class="square" onclick="clickMarker('colorbm')" title="clickMarker('colorbm')">m</button>
+              <button id="button_colorbn" class="square" onclick="clickMarker('colorbn')" title="clickMarker('colorbn')">n</button>
+              <button id="button_colorbo" class="square" onclick="clickMarker('colorbo')" title="clickMarker('colorbo')">o</button>
+              <button id="button_colorbp" class="square" onclick="clickMarker('colorbp')" title="clickMarker('colorbp')">p</button>
+              <button id="button_colorbq" class="square" onclick="clickMarker('colorbq')" title="clickMarker('colorbq')">q</button>
+              <button id="button_colorbr" class="square" onclick="clickMarker('colorbr')" title="clickMarker('colorbr')">r</button>
+              <button id="button_colorbs" class="square" onclick="clickMarker('colorbs')" title="clickMarker('colorbs')">s</button>
+              <button id="button_colorbt" class="square" onclick="clickMarker('colorbt')" title="clickMarker('colorbt')">t</button>
+              <button id="button_colorbu" class="square" onclick="clickMarker('colorbu')" title="clickMarker('colorbu')">u</button>
+              <button id="button_colorbv" class="square" onclick="clickMarker('colorbv')" title="clickMarker('colorbv')">v</button>
+              <button id="button_colorbw" class="square" onclick="clickMarker('colorbw')" title="clickMarker('colorbw')">w</button>
+              <button id="button_colorbx" class="square" onclick="clickMarker('colorbx')" title="clickMarker('colorbx')">x</button>
+              <button id="button_colorby" class="square" onclick="clickMarker('colorby')" title="clickMarker('colorby')">y</button>
+              <button id="button_colorbz" class="square" onclick="clickMarker('colorbz')" title="clickMarker('colorbz')">z</button>
+              <button id="button_nocolorb" class="square" onclick="clickMarker('nocolorb')" title="clickMarker('nocolorb')">-</button>
+            </div>
+          </div>
+          <!-- 3rd,4th toolbars: 2nd column (ranges) -->
+          <div id="inputranges" class="flexcolumn topbar">
+            <input id="range1" type="range" onchange="updatedRange1()"></input>
+            <input id="range2" type="range" onchange="updatedRange2()"></input>
+          </div>
+        </div>
+        <!-- 5th toolbar -->
+        <div class="flexrow topbar">
+          <button id="button_noleft" onclick="clickMarker('noleft')" title="clickMarker('noleft')"><s>left</s></button>
+          <button id="button_left1half" onclick="clickMarker('left0c5')" title="clickMarker('left0c5')">½</button>
+          <button id="button_left1" onclick="clickMarker('left1')" title="clickMarker('left1')">1</button>
+          <button id="button_left1half" onclick="clickMarker('left1c5')" title="clickMarker('left1c5')">1½</button>
+          <button id="button_left2" onclick="clickMarker('left2')" title="clickMarker('left2')">2</button>
+          <button id="button_left2half" onclick="clickMarker('left2c5')" title="clickMarker('left2c5')">2½</button>
+          <button id="button_left3" onclick="clickMarker('left3')" title="clickMarker('left3')">3</button>
+          <button id="button_noright" onclick="clickMarker('noright')" title="clickMarker('noright')"><s>right</s></button>
+          <button id="button_right16" onclick="clickMarker('right1d16')" title="clickMarker('right1d16')">¹/₁₆</button>
+          <button id="button_right8" onclick="clickMarker('right1d8')" title="clickMarker('right1d8')">⅛</button>
+          <button id="button_right4" onclick="clickMarker('right1d4')" title="clickMarker('right1d4')">¼</button>
+          <button id="button_righthalf" onclick="clickMarker('right0c5')" title="clickMarker('right0c5')">½</button>
+          <button id="button_right1half" onclick="clickMarker('right1')" title="clickMarker('right1')">1</button>
+          <button id="button_right1h" onclick="clickMarker('right1c5')" title="clickMarker('right1c5')">1½</button>
+          <button id="button_right2" onclick="clickMarker('right2')" title="clickMarker('right2')">2</button>
+          <button id="button_right2h" onclick="clickMarker('right2c5')" title="clickMarker('right2c5')">2½</button>
+          <button id="button_right3" onclick="clickMarker('right3')" title="clickMarker('right3')">3</button>
+          <button id="button_noprefix" onclick="clickMarker('noprefix')" title="clickMarker('noprefix')"><s>prefix</s></button>
+          <button id="button_prefixplus" onclick="clickMarker('prefixplus')" title="clickMarker('prefixplus')">+</button>
+          <button id="button_prefixminus" onclick="clickMarker('prefixminus')" title="clickMarker('prefixminus')">&#x2212;</button>
+          <button id="button_prefixequal" onclick="clickMarker('prefixequal')" title="clickMarker('prefixequal')">=</button>
+          <button id="button_prefixdot" onclick="clickMarker('prefixdot')" title="clickMarker('prefixdot')">.</button>
+          <button id="button_prefixpoint" onclick="clickMarker('prefixpoint')" title="clickMarker('prefixpoint')">·</button>
+          <button id="button_prefixcolon" onclick="clickMarker('prefixcolon')" title="clickMarker('prefixcolon')">:</button>
+          <button id="button_prefix2colons" onclick="clickMarker('prefix2colons')" title="clickMarker('prefix2colons')">::</button>
+          <button id="button_prefixmult" onclick="clickMarker('prefixmult')" title="clickMarker('prefixmult')">×</button>
+          <button id="button_prefixa" onclick="clickMarker('prefixa')" title="clickMarker('prefixa')">a</button>
+          <button id="button_prefixb" onclick="clickMarker('prefixb')" title="clickMarker('prefixb')">b</button>
+          <button id="button_prefixc" onclick="clickMarker('prefixc')" title="clickMarker('prefixc')">c</button>
+          <button id="button_prefixaprim" onclick="clickMarker('prefixap')" title="clickMarker('prefixap')">a'</button>
+          <button id="button_prefixbprim" onclick="clickMarker('prefixbp')" title="clickMarker('prefixbp')">b'</button>
+          <button id="button_prefixcprim" onclick="clickMarker('prefixcp')" title="clickMarker('prefixcp')">c'</button>
+          <button id="button_nodown" onclick="clickMarker('nodown')" title="clickMarker('nodown')"><s>down</s></button>
+          <button id="button_down1" onclick="clickMarker('down1')" title="clickMarker('down1')">1</button>
+          <button id="button_down2" onclick="clickMarker('down2')" title="clickMarker('down2')">2</button>
+          <button id="button_down3" onclick="clickMarker('down3')" title="clickMarker('down3')">3</button>
+          <button id="button_center" onclick="clickMarker('center')" title="clickMarker('center')">▭</button>
+        </div>
+        <!-- 6th toolbar -->
+        <div class="flexrow topbar">
+          <button onclick="removeFocusPrettyFormatting()" title="Remove pretty formatting on focus removeFocusPrettyFormatting()">&lt;&gt;</button>
+          <button onclick="prettyFormatFocus()" title="Perform pretty formatting on focus prettyFormatFocus()">&lt;&gt;&#x21b5;</button>
+          <button onclick="storageSaveFocusAs()" title="Save focus as a stored document">&#x1f5ab;&#x2193;</button>
+          <div class="rowitemsseparator"></div>
+          <button onclick="cleanSelectionDecorators()" title="remove decorators for the selected level">D&#x2573;</button>
+          <button onclick="focusCopyDecorUp()" title="copy decorators for the selected level to the next level up in the hierarchy, working on the focus only focusCopyDecorUp()">&#x21c8;</button>
+          <button onclick="focusCopyDecorDown()" title="copy decorators for the selected level in the menu to the next level down in the hierarchy, working on the focus only focusCopyDecorDown()">&#x21ca;</button>
+          <button onclick="focusMoveDecorUp()" title="move decorators for the selected level to the next level up in the hierarchy, working on the focus only focusMoveDecorUp()">&#x2191;</button>
+          <button onclick="focusMoveDecorDown()" title="move decorators for the selected level in the menu to the next level down in the hierarchy, working on the focus only focusMoveDecorDown()">&#x2193;</button>
+          <div class="rowitemsseparator"></div>
+          <button onclick="shiftSelectionLeft()" title="shiftSelectionLeft()">&#x2190;&#x2610;</button>
+          <button onclick="mergeSelectionLeft()" title="mergeSelectionLeft()">&#x2610;&#x2190;&#x2610;</button>
+          <button onclick="splitOnSelection()" title="splitOnSelection()">&#x2190;&#x2610;&#x2192;</button>
+          <button onclick="delLevel()" title="delLevel()">&#x2612;</button>
+          <button onclick="mergeSelectionRight()" title="mergeSelectionRight()">&#x2610;&#x2192;&#x2610;</button>
+          <button onclick="shiftSelectionRight()" title="shiftSelectionRight()">&#x2610;&#x2192;</button>
+          <div class="rowitemsseparator"></div>
+          <button onclick="moveSelectionLeft()" title="moveSelectionLeft()">&#x2190;</button>
+          <button onclick="moveSelectionUp()" title="moveSelectionUp()">&#x2191;</button>
+          <button onclick="moveSelectionToTop()" title="moveSelectionToTop()">&#x21c8;</button>
+          <button onclick="unselect()" title="unselect()">&#x2300;</button>
+          <button onclick="moveSelectionDown()" title="moveSelectionDown()">&#x2193;</button>
+          <button onclick="moveSelectionRight()" title="moveSelectionRight()">&#x2192;</button>
+          <input id="selectionlevelborderscheckbox" type="checkbox" onclick="selectionLevelBorders()" title="selectionLevelBorders()">
+          <div class="rowitemsseparator"></div>
+          <button id="button_structuremain" onclick="clickMode('structuremain')" title="clickMode('structuremain')">&#x28e7;</button>
+          <button id="button_structurefocus" onclick="clickMode('structurefocus')" title="clickMode('structurefocus')">&#x28e6;</button>
+          <button id="button_text" onclick="clickMode('text')" title="clickMode('text')">&#x270d;</button>
+          <button onclick="describe()" title="describe()">&#x270e;</button>
+          <button onclick="addLevel(1)" title="addLevel(1)">&#x2a72;1</button>
+          <button onclick="addLevelDp(1)" title="addLevelDp(1)">&#x2a72;&#x2a72;1</button>
+          <button onclick="addLevel(2)" title="addLevel(2)">&#x2a72;2</button>
+          <button onclick="addLevelDp(2)" title="addLevelDp(2)">&#x2a72;&#x2a72;2</button>
+          <button onclick="addLevelDown(1)" title="addLevelDown(1)">&#x2a71;1</button>
+          <button onclick="removeLevelsAbove()" title="removeLevelsAbove()">&#x21a8;&#x21a8;&#x21a8;</button>
+        </div>
+        <!-- status bar -->
+        <div id="statusbar"></div>
+        <!-- textarea -->
+        <div class="flexrow topbar">
+          <textarea id="textarea" onfocusout="onTextAreaOut()"></textarea>
+        </div>
+      </div>
+      <div id="wordsarea"></div>
+    </div>
+    <div id="content">
+      <div id="aux">
+      </div>
+      <main id="main">
+      </main>
+    </div>
+  </body>
+</html>

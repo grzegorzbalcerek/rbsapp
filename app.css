@@ -1,0 +1,2084 @@
+
+html, body, p, div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+div.topbar {
+    min-height: 25px;
+}
+
+div.topbar label {
+    padding-left: 0.5em;
+    padding-right: 0;
+    padding-top: 0.3em;
+}
+
+div.topbar button {
+    height: 25px;
+}
+
+div.topbar input {
+    height: 19px;
+}
+
+div#toppanel {
+    top: 0;
+    position: fixed;
+    background-color: #e0e0e0;
+    font-size: 9pt;
+    min-height: 25px;
+    z-index: 1;
+    width: 100%;
+}
+
+div.flexcolumn {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+div.flexrow {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+div.flexrowwrap {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.rowitemsseparator {
+    width: 5px;
+}
+
+.spacearound {
+    justify-content: space-around;
+}
+
+.flexend {
+    justify-content: flex-end;
+}
+
+.container {
+    border: 1px solid black;
+}
+
+select#langselect {
+    font-size: 9pt;
+}
+
+select#levelselect {
+    font-size: 9pt;
+}
+
+.selected {
+    border: 2px dotted black;
+}
+
+button {
+    height: 25px;
+}
+
+button.square {
+    width: 25px;
+    text-align: center;
+    padding: 0;
+}
+
+body.prescanmode button#ogntbutton,
+body.prescanmode button#wordsbutton {
+    background-color: red;
+}
+
+body.wordsmode button#wordsbutton {
+    background-color: orange;
+}
+
+body.wordsmode div#wordsarea {
+    background-color: yellow;
+    cursor: crosshair;
+    font-size: 12pt;
+}
+
+body.wordsmode div#wordsarea scan {
+    padding: 0 0.2em;
+}
+
+div#statusbar {
+    white-space: pre;
+    height: 16px;
+}
+div#statusbar label {
+    padding-left: 2pt;
+}
+
+textarea#textarea {
+    margin: 0;
+    width: 100%;
+}
+
+div input#rangesinput {
+    width: 300px;
+}
+
+div select#selectionselect {
+    width: 390px;
+}
+
+body div#inputranges {
+    border: solid 1px transparent;
+}
+
+body.linkranges div#inputranges {
+    border: dotted 1px black;
+}
+
+input[type="range"] {
+    width: 170px;
+}
+
+#button_colorfa { color: white; background-color: var(--colorfa); }
+#button_colorfb { color: white; background-color: var(--colorfb); }
+#button_colorfc { color: white; background-color: var(--colorfc); }
+#button_colorfd { color: white; background-color: var(--colorfd); }
+#button_colorfe { color: white; background-color: var(--colorfe); }
+#button_colorff { color: white; background-color: var(--colorff); }
+#button_colorfg { color: white; background-color: var(--colorfg); }
+#button_colorfh { color: white; background-color: var(--colorfh); }
+#button_colorfi { color: white; background-color: var(--colorfi); }
+#button_colorfj { color: white; background-color: var(--colorfj); }
+#button_colorfk { color: white; background-color: var(--colorfk); }
+#button_colorfl { color: white; background-color: var(--colorfl); }
+#button_colorfm { color: white; background-color: var(--colorfm); }
+#button_colorfn { color: white; background-color: var(--colorfn); }
+#button_colorfo { color: white; background-color: var(--colorfo); }
+#button_colorfp { color: white; background-color: var(--colorfp); }
+#button_colorfq { color: white; background-color: var(--colorfq); }
+#button_colorfr { color: white; background-color: var(--colorfr); }
+#button_colorfs { color: white; background-color: var(--colorfs); }
+#button_colorft { color: white; background-color: var(--colorft); }
+#button_colorfu { color: white; background-color: var(--colorfu); }
+#button_colorfv { color: white; background-color: var(--colorfv); }
+#button_colorfw { color: white; background-color: var(--colorfw); }
+#button_colorfx { color: white; background-color: var(--colorfx); }
+#button_colorfy { color: white; background-color: var(--colorfy); }
+#button_colorfz { color: white; background-color: var(--colorfz); }
+
+#button_colorba { color: black; background-color: var(--colorba); }
+#button_colorbb { color: black; background-color: var(--colorbb); }
+#button_colorbc { color: black; background-color: var(--colorbc); }
+#button_colorbd { color: black; background-color: var(--colorbd); }
+#button_colorbe { color: black; background-color: var(--colorbe); }
+#button_colorbf { color: black; background-color: var(--colorbf); }
+#button_colorbg { color: black; background-color: var(--colorbg); }
+#button_colorbh { color: black; background-color: var(--colorbh); }
+#button_colorbi { color: black; background-color: var(--colorbi); }
+#button_colorbj { color: black; background-color: var(--colorbj); }
+#button_colorbk { color: black; background-color: var(--colorbk); }
+#button_colorbl { color: black; background-color: var(--colorbl); }
+#button_colorbm { color: black; background-color: var(--colorbm); }
+#button_colorbn { color: black; background-color: var(--colorbn); }
+#button_colorbo { color: black; background-color: var(--colorbo); }
+#button_colorbp { color: black; background-color: var(--colorbp); }
+#button_colorbq { color: black; background-color: var(--colorbq); }
+#button_colorbr { color: black; background-color: var(--colorbr); }
+#button_colorbs { color: black; background-color: var(--colorbs); }
+#button_colorbt { color: black; background-color: var(--colorbt); }
+#button_colorbu { color: black; background-color: var(--colorbu); }
+#button_colorbv { color: black; background-color: var(--colorbv); }
+#button_colorbw { color: black; background-color: var(--colorbw); }
+#button_colorbx { color: black; background-color: var(--colorbx); }
+#button_colorby { color: black; background-color: var(--colorby); }
+#button_colorbz { color: black; background-color: var(--colorbz); }
+
+.bo { font-weight: bold; }
+.it { font-style: italic; }
+.sc { font-variant-caps: small-caps; }
+
+div#content {
+    top: 25px;
+    position: relative;
+}
+
+body div#aux {
+    font-size: 10pt;
+    display: none;
+    padding-left: 0.5em;
+}
+
+body.showaux div#aux {
+    display: block;
+}
+
+body div#aux table {
+    border-collapse: collapse;
+    cursor: crosshair;
+}
+
+body div#aux table tr:hover {
+    background-color: #dddddd;
+}
+
+main {
+    --fontsize: 11pt;
+    --fontsize08: calc(var(--fontsize) * 0.8);
+    --fontsize05: calc(var(--fontsize) * 0.5);
+    --fontsize033: calc(var(--fontsize) * 0.33333333);
+    --fontsize02: calc(var(--fontsize) * 0.2);
+    --termsize: 16;
+    --termwidth: calc(var(--fontsize) * var(--termsize));
+    --prefixletterspacing: calc(-0.25 * var(--fontsize));
+    --termsixteenth: calc(var(--termwidth) / 16);
+    --termeighth: calc(var(--termwidth) / 8);
+    --termquarter: calc(var(--termwidth) / 4);
+    --termhalf: calc(var(--termwidth) / 2);
+    --termone: var(--termwidth);
+    --termonehalf: calc(var(--termwidth) * 1.5);
+    --termtwo: calc(var(--termwidth) * 2);
+    --termtwohalf: calc(var(--termwidth) * 2.5);
+    --termthree: calc(-1 * var(--termwidth) * 3);
+    --term-sixteenth: calc(-1 * var(--termwidth) / 16);
+    --term-eighth: calc(-1 * var(--termwidth) / 8);
+    --term-quarter: calc(-1 * var(--termwidth) / 4);
+    --term-half: calc(-1 * var(--termwidth) / 2);
+    --term-one: calc(-1 * var(--termwidth));
+    --term-onehalf: calc(-1 * var(--termwidth) * 1.5);
+    --term-two: calc(-1 * var(--termwidth) * 2);
+    --term-twohalf: calc(-1 * var(--termwidth) * 2.5);
+    --term-three: calc(-1 * var(--termwidth) * 3);
+    --line-one: calc(1.6 * var(--fontsize));
+    --line-two: calc(3.2 * var(--fontsize));
+    --line-three: calc(4.8 * var(--fontsize));
+    font-size: var(--fontsize);
+    margin: 0;
+    padding: 0 var(--fontsize05) var(--fontsize02) var(--fontsize05);
+    border: 0;
+    position: relative;
+}
+
+main[fontsize="7"]  { --fontsize: 7pt; }
+main[fontsize="8"]  { --fontsize: 8pt; }
+main[fontsize="9"]  { --fontsize: 9pt; }
+main[fontsize="10"] { --fontsize: 10pt; }
+main[fontsize="11"] { --fontsize: 11pt; }
+main[fontsize="12"] { --fontsize: 12pt; }
+main[fontsize="13"] { --fontsize: 13pt; }
+main[fontsize="14"] { --fontsize: 14pt; }
+main[fontsize="15"] { --fontsize: 15pt; }
+
+main[termsize="12"] { --termsize: 12; }
+main[termsize="13"] { --termsize: 13; }
+main[termsize="14"] { --termsize: 14; }
+main[termsize="15"] { --termsize: 15; }
+main[termsize="16"] { --termsize: 16; }
+main[termsize="17"] { --termsize: 17; }
+main[termsize="18"] { --termsize: 18; }
+main[termsize="19"] { --termsize: 19; }
+main[termsize="20"] { --termsize: 20; }
+
+main[mode] { cursor: crosshair; }
+
+book, section, subsection, sequence, subsequence, passage, part, subpart, piece, segment, member, term {
+     font-size: 0;
+}
+
+span { display: inline flow-root; }
+[visible] span { display: none; }
+[visible] word[visible] span { display: inline flow-root; }
+[visible] span[visible] { display: inline flow-root; }
+span {
+    font-size: var(--fontsize);
+}
+
+chapter { display: inline flow-root; }
+[visible] chapter { display: none; }
+[visible] chapter[visible] { display: inline flow-root; }
+chapter {
+    font-size: var(--fontsize);
+}
+
+verse { display: inline flow-root; }
+[visible] verse { display: none; }
+[visible] verse[visible] { display: inline flow-root; }
+verse {
+    color: black;
+    font-variant-position: super;
+    padding-right: var(--fontsize033);
+    font-size: var(--fontsize);
+}
+
+word { display: inline flow-root; }
+[visible] word { display: none; }
+[visible] word[visible] { display: inline flow-root; }
+word {
+    font-size: var(--fontsize);
+}
+
+gr, en, es, fr, it, pl, tl {
+    display: none;
+    font-size: var(--fontsize);
+}
+
+body.wordsmode main gr,
+main[lang="gr"] gr,
+main[lang="en"] en,
+main[lang="es"] es,
+main[lang="fr"] fr,
+main[lang="it"] it,
+main[lang="pl"] pl,
+main[lang="tl"] tl {
+    display: inline flow-root;
+    padding-right: var(--fontsize02);
+}
+
+main[lang="gr"] gr:empty,
+main[lang="en"] en:empty,
+main[lang="es"] es:empty,
+main[lang="fr"] fr:empty,
+main[lang="it"] it:empty,
+main[lang="pl"] pl:empty,
+main[lang="tl"] tl:empty {
+    display: none;
+    padding-right: 0;
+}
+
+main[showemptywords="true"][lang="gr"] gr:empty,
+main[showemptywords="true"][lang="en"] en:empty,
+main[showemptywords="true"][lang="es"] es:empty,
+main[showemptywords="true"][lang="fr"] fr:empty,
+main[showemptywords="true"][lang="it"] it:empty,
+main[showemptywords="true"][lang="pl"] pl:empty,
+main[showemptywords="true"][lang="tl"] tl:empty {
+    display: inline flow-root;
+    height: var(--fontsize05);
+    width: var(--fontsize05);
+    border-width: 1px;
+    border-style: solid;
+    padding-right: 0;
+    margin-right: var(--fontsize02);
+}
+
+main[lang="gr"] word:last-of-type gr,
+main[lang="en"] word:last-of-type en,
+main[lang="es"] word:last-of-type es,
+main[lang="fr"] word:last-of-type fr,
+main[lang="it"] word:last-of-type it,
+main[lang="pl"] word:last-of-type pl,
+main[lang="tl"] word:last-of-type tl {
+    padding-right: 0;
+}
+
+body.wordsmode main gr {
+    color: var(--colorfi);
+}
+
+#selection {
+    border: 2px solid red!important;
+}
+
+[hover] {
+    border: 1px solid blue!important;
+}
+
+body {
+    /* https://en.wikipedia.org/wiki/Web_colorbs */
+    --colorfa: #8000ff; /* violet */              --colorba: #b080ff;
+    --colorfb: #0000ff; /* blue */                --colorbb: #8080ff;
+    --colorfc: #00eeee; /* cyan (aqua) */         --colorbc: #80ffff;
+    --colorfd: #00afff; /* deep blue sky */       --colorbd: #80bfff;
+    --colorfe: #000080; /* navy */                --colorbe: #6060b0;
+    --colorff: #009999; /* teal */                --colorbf: #609999;
+    --colorfg: #008000; /* green */               --colorbg: #80ff80;
+    --colorfh: #00ee00; /* lime */                --colorbh: #40ee40;
+    --colorfi: #808000; /* olive */               --colorbi: #a0a060;
+    --colorfj: #eeee00; /* yellow */              --colorbj: #ffff80;
+    --colorfk: #ffbc00; /* gold */                --colorbk: #ffbc40;
+    --colorfl: #800000; /* marron */              --colorbl: #800000;
+    --colorfm: #ff00ff; /* fuchsia/magenta */     --colorbm: #ff80ff;
+    --colorfn: #ff8080; /* salmon */              --colorbn: #ff8080;
+    --colorfo: #ff8000; /* dark oranges */        --colorbo: #ff8000;
+    --colorfp: #ff80ff; /* pink */                --colorbp: #ffa0ff;
+    --colorfq: #808080; /* gray */                --colorbq: #808080;
+    --colorfr: #ff0000; /* red */                 --colorbr: #ff9090;
+    --colorfs: #000000; /*  */                    --colorbs: #c0c0c0;
+    --colorft: #000000; /*  */                    --colorbt: #e0e0ff;
+    --colorfu: #000000; /*  */                    --colorbu: #e0ffff;
+    --colorfv: #000000; /*  */                    --colorbv: #e0ffe0;
+    --colorfw: #000000; /*  */                    --colorbw: #ffe0a0;
+    --colorfx: #000000; /*  */                    --colorbx: #ffffe0;
+    --colorfy: #000000; /*  */                    --colorby: #ffe0ff;
+    --colorfz: #000000; /*  */                    --colorbz: #ffe0e0;
+}
+
+main.markers[level="book"] word[book*="color"] span,
+main.markers[level="section"] word[section*="color"] span,
+main.markers[level="subsection"] word[subsection*="color"] span,
+main.markers[level="sequence"] word[sequence*="color"] span,
+main.markers[level="subsequence"] word[subsequence*="color"] span,
+main.markers[level="passage"] word[passage*="color"] span,
+main.markers[level="part"] word[part*="color"] span,
+main.markers[level="subpart"] word[subpart*="color"] span,
+main.markers[level="piece"] word[piece*="color"] span,
+main.markers[level="segment"] word[segment*="color"] span
+{
+    color: black;
+}
+
+main.markers[level="book"] [book~="colorfa"],
+main.markers[level="section"] [section~="colorfa"],
+main.markers[level="subsection"] [subsection~="colorfa"],
+main.markers[level="sequence"] [sequence~="colorfa"],
+main.markers[level="subsequence"] [subsequence~="colorfa"],
+main.markers[level="passage"] [passage~="colorfa"],
+main.markers[level="part"] [part~="colorfa"],
+main.markers[level="subpart"] [subpart~="colorfa"],
+main.markers[level="piece"] [piece~="colorfa"],
+main.markers[level="segment"] [segment~="colorfa"]
+{
+    color: var(--colorfa);
+}
+
+main.markers[level="book"] [book~="colorfb"],
+main.markers[level="section"] [section~="colorfb"],
+main.markers[level="subsection"] [subsection~="colorfb"],
+main.markers[level="sequence"] [sequence~="colorfb"],
+main.markers[level="subsequence"] [subsequence~="colorfb"],
+main.markers[level="passage"] [passage~="colorfb"],
+main.markers[level="part"] [part~="colorfb"],
+main.markers[level="subpart"] [subpart~="colorfb"],
+main.markers[level="piece"] [piece~="colorfb"],
+main.markers[level="segment"] [segment~="colorfb"]
+{
+    color: var(--colorfb);
+}
+
+main.markers[level="book"] [book~="colorfc"],
+main.markers[level="section"] [section~="colorfc"],
+main.markers[level="subsection"] [subsection~="colorfc"],
+main.markers[level="sequence"] [sequence~="colorfc"],
+main.markers[level="subsequence"] [subsequence~="colorfc"],
+main.markers[level="passage"] [passage~="colorfc"],
+main.markers[level="part"] [part~="colorfc"],
+main.markers[level="subpart"] [subpart~="colorfc"],
+main.markers[level="piece"] [piece~="colorfc"],
+main.markers[level="segment"] [segment~="colorfc"]
+{
+    color: var(--colorfc);
+}
+
+main.markers[level="book"] [book~="colorfd"],
+main.markers[level="section"] [section~="colorfd"],
+main.markers[level="subsection"] [subsection~="colorfd"],
+main.markers[level="sequence"] [sequence~="colorfd"],
+main.markers[level="subsequence"] [subsequence~="colorfd"],
+main.markers[level="passage"] [passage~="colorfd"],
+main.markers[level="part"] [part~="colorfd"],
+main.markers[level="subpart"] [subpart~="colorfd"],
+main.markers[level="piece"] [piece~="colorfd"],
+main.markers[level="segment"] [segment~="colorfd"]
+{
+    color: var(--colorfd);
+}
+
+main.markers[level="book"] [book~="colorfe"],
+main.markers[level="section"] [section~="colorfe"],
+main.markers[level="subsection"] [subsection~="colorfe"],
+main.markers[level="sequence"] [sequence~="colorfe"],
+main.markers[level="subsequence"] [subsequence~="colorfe"],
+main.markers[level="passage"] [passage~="colorfe"],
+main.markers[level="part"] [part~="colorfe"],
+main.markers[level="subpart"] [subpart~="colorfe"],
+main.markers[level="piece"] [piece~="colorfe"],
+main.markers[level="segment"] [segment~="colorfe"]
+{
+    color: var(--colorfe);
+}
+
+main.markers[level="book"] [book~="colorff"],
+main.markers[level="section"] [section~="colorff"],
+main.markers[level="subsection"] [subsection~="colorff"],
+main.markers[level="sequence"] [sequence~="colorff"],
+main.markers[level="subsequence"] [subsequence~="colorff"],
+main.markers[level="passage"] [passage~="colorff"],
+main.markers[level="part"] [part~="colorff"],
+main.markers[level="subpart"] [subpart~="colorff"],
+main.markers[level="piece"] [piece~="colorff"],
+main.markers[level="segment"] [segment~="colorff"]
+{
+    color: var(--colorff);
+}
+
+main.markers[level="book"] [book~="colorfg"],
+main.markers[level="section"] [section~="colorfg"],
+main.markers[level="subsection"] [subsection~="colorfg"],
+main.markers[level="sequence"] [sequence~="colorfg"],
+main.markers[level="subsequence"] [subsequence~="colorfg"],
+main.markers[level="passage"] [passage~="colorfg"],
+main.markers[level="part"] [part~="colorfg"],
+main.markers[level="subpart"] [subpart~="colorfg"],
+main.markers[level="piece"] [piece~="colorfg"],
+main.markers[level="segment"] [segment~="colorfg"]
+{
+    color: var(--colorfg);
+}
+
+main.markers[level="book"] [book~="colorfh"],
+main.markers[level="section"] [section~="colorfh"],
+main.markers[level="subsection"] [subsection~="colorfh"],
+main.markers[level="sequence"] [sequence~="colorfh"],
+main.markers[level="subsequence"] [subsequence~="colorfh"],
+main.markers[level="passage"] [passage~="colorfh"],
+main.markers[level="part"] [part~="colorfh"],
+main.markers[level="subpart"] [subpart~="colorfh"],
+main.markers[level="piece"] [piece~="colorfh"],
+main.markers[level="segment"] [segment~="colorfh"]
+{
+    color: var(--colorfh);
+}
+
+main.markers[level="book"] [book~="colorfi"],
+main.markers[level="section"] [section~="colorfi"],
+main.markers[level="subsection"] [subsection~="colorfi"],
+main.markers[level="sequence"] [sequence~="colorfi"],
+main.markers[level="subsequence"] [subsequence~="colorfi"],
+main.markers[level="passage"] [passage~="colorfi"],
+main.markers[level="part"] [part~="colorfi"],
+main.markers[level="subpart"] [subpart~="colorfi"],
+main.markers[level="piece"] [piece~="colorfi"],
+main.markers[level="segment"] [segment~="colorfi"]
+{
+    color: var(--colorfi);
+}
+
+main.markers[level="book"] [book~="colorfj"],
+main.markers[level="section"] [section~="colorfj"],
+main.markers[level="subsection"] [subsection~="colorfj"],
+main.markers[level="sequence"] [sequence~="colorfj"],
+main.markers[level="subsequence"] [subsequence~="colorfj"],
+main.markers[level="passage"] [passage~="colorfj"],
+main.markers[level="part"] [part~="colorfj"],
+main.markers[level="subpart"] [subpart~="colorfj"],
+main.markers[level="piece"] [piece~="colorfj"],
+main.markers[level="segment"] [segment~="colorfj"]
+{
+    color: var(--colorfj);
+}
+
+main.markers[level="book"] [book~="colorfk"],
+main.markers[level="section"] [section~="colorfk"],
+main.markers[level="subsection"] [subsection~="colorfk"],
+main.markers[level="sequence"] [sequence~="colorfk"],
+main.markers[level="subsequence"] [subsequence~="colorfk"],
+main.markers[level="passage"] [passage~="colorfk"],
+main.markers[level="part"] [part~="colorfk"],
+main.markers[level="subpart"] [subpart~="colorfk"],
+main.markers[level="piece"] [piece~="colorfk"],
+main.markers[level="segment"] [segment~="colorfk"]
+{
+    color: var(--colorfk);
+}
+
+main.markers[level="book"] [book~="colorfl"],
+main.markers[level="section"] [section~="colorfl"],
+main.markers[level="subsection"] [subsection~="colorfl"],
+main.markers[level="sequence"] [sequence~="colorfl"],
+main.markers[level="subsequence"] [subsequence~="colorfl"],
+main.markers[level="passage"] [passage~="colorfl"],
+main.markers[level="part"] [part~="colorfl"],
+main.markers[level="subpart"] [subpart~="colorfl"],
+main.markers[level="piece"] [piece~="colorfl"],
+main.markers[level="segment"] [segment~="colorfl"]
+{
+    color: var(--colorfl);
+}
+
+main.markers[level="book"] [book~="colorfm"],
+main.markers[level="section"] [section~="colorfm"],
+main.markers[level="subsection"] [subsection~="colorfm"],
+main.markers[level="sequence"] [sequence~="colorfm"],
+main.markers[level="subsequence"] [subsequence~="colorfm"],
+main.markers[level="passage"] [passage~="colorfm"],
+main.markers[level="part"] [part~="colorfm"],
+main.markers[level="subpart"] [subpart~="colorfm"],
+main.markers[level="piece"] [piece~="colorfm"],
+main.markers[level="segment"] [segment~="colorfm"]
+{
+    color: var(--colorfm);
+}
+
+main.markers[level="book"] [book~="colorfn"],
+main.markers[level="section"] [section~="colorfn"],
+main.markers[level="subsection"] [subsection~="colorfn"],
+main.markers[level="sequence"] [sequence~="colorfn"],
+main.markers[level="subsequence"] [subsequence~="colorfn"],
+main.markers[level="passage"] [passage~="colorfn"],
+main.markers[level="part"] [part~="colorfn"],
+main.markers[level="subpart"] [subpart~="colorfn"],
+main.markers[level="piece"] [piece~="colorfn"],
+main.markers[level="segment"] [segment~="colorfn"]
+{
+    color: var(--colorfn);
+}
+
+main.markers[level="book"] [book~="colorfo"],
+main.markers[level="section"] [section~="colorfo"],
+main.markers[level="subsection"] [subsection~="colorfo"],
+main.markers[level="sequence"] [sequence~="colorfo"],
+main.markers[level="subsequence"] [subsequence~="colorfo"],
+main.markers[level="passage"] [passage~="colorfo"],
+main.markers[level="part"] [part~="colorfo"],
+main.markers[level="subpart"] [subpart~="colorfo"],
+main.markers[level="piece"] [piece~="colorfo"],
+main.markers[level="segment"] [segment~="colorfo"]
+{
+    color: var(--colorfo);
+}
+
+main.markers[level="book"] [book~="colorfp"],
+main.markers[level="section"] [section~="colorfp"],
+main.markers[level="subsection"] [subsection~="colorfp"],
+main.markers[level="sequence"] [sequence~="colorfp"],
+main.markers[level="subsequence"] [subsequence~="colorfp"],
+main.markers[level="passage"] [passage~="colorfp"],
+main.markers[level="part"] [part~="colorfp"],
+main.markers[level="subpart"] [subpart~="colorfp"],
+main.markers[level="piece"] [piece~="colorfp"],
+main.markers[level="segment"] [segment~="colorfp"]
+{
+    color: var(--colorfp);
+}
+
+main.markers[level="book"] [book~="colorfq"],
+main.markers[level="section"] [section~="colorfq"],
+main.markers[level="subsection"] [subsection~="colorfq"],
+main.markers[level="sequence"] [sequence~="colorfq"],
+main.markers[level="subsequence"] [subsequence~="colorfq"],
+main.markers[level="passage"] [passage~="colorfq"],
+main.markers[level="part"] [part~="colorfq"],
+main.markers[level="subpart"] [subpart~="colorfq"],
+main.markers[level="piece"] [piece~="colorfq"],
+main.markers[level="segment"] [segment~="colorfq"]
+{
+    color: var(--colorfq);
+}
+
+main.markers[level="book"] [book~="colorfr"],
+main.markers[level="section"] [section~="colorfr"],
+main.markers[level="subsection"] [subsection~="colorfr"],
+main.markers[level="sequence"] [sequence~="colorfr"],
+main.markers[level="subsequence"] [subsequence~="colorfr"],
+main.markers[level="passage"] [passage~="colorfr"],
+main.markers[level="part"] [part~="colorfr"],
+main.markers[level="subpart"] [subpart~="colorfr"],
+main.markers[level="piece"] [piece~="colorfr"],
+main.markers[level="segment"] [segment~="colorfr"]
+{
+    color: var(--colorfr);
+}
+
+main.markers[level="book"] [book~="colorfs"],
+main.markers[level="section"] [section~="colorfs"],
+main.markers[level="subsection"] [subsection~="colorfs"],
+main.markers[level="sequence"] [sequence~="colorfs"],
+main.markers[level="subsequence"] [subsequence~="colorfs"],
+main.markers[level="passage"] [passage~="colorfs"],
+main.markers[level="part"] [part~="colorfs"],
+main.markers[level="subpart"] [subpart~="colorfs"],
+main.markers[level="piece"] [piece~="colorfs"],
+main.markers[level="segment"] [segment~="colorfs"]
+{
+    color: var(--colorfs);
+}
+
+main.markers[level="book"] [book~="colorft"],
+main.markers[level="section"] [section~="colorft"],
+main.markers[level="subsection"] [subsection~="colorft"],
+main.markers[level="sequence"] [sequence~="colorft"],
+main.markers[level="subsequence"] [subsequence~="colorft"],
+main.markers[level="passage"] [passage~="colorft"],
+main.markers[level="part"] [part~="colorft"],
+main.markers[level="subpart"] [subpart~="colorft"],
+main.markers[level="piece"] [piece~="colorft"],
+main.markers[level="segment"] [segment~="colorft"]
+{
+    color: var(--colorft);
+}
+
+main.markers[level="book"] [book~="colorfu"],
+main.markers[level="section"] [section~="colorfu"],
+main.markers[level="subsection"] [subsection~="colorfu"],
+main.markers[level="sequence"] [sequence~="colorfu"],
+main.markers[level="subsequence"] [subsequence~="colorfu"],
+main.markers[level="passage"] [passage~="colorfu"],
+main.markers[level="part"] [part~="colorfu"],
+main.markers[level="subpart"] [subpart~="colorfu"],
+main.markers[level="piece"] [piece~="colorfu"],
+main.markers[level="segment"] [segment~="colorfu"]
+{
+    color: var(--colorfu);
+}
+
+main.markers[level="book"] [book~="colorfv"],
+main.markers[level="section"] [section~="colorfv"],
+main.markers[level="subsection"] [subsection~="colorfv"],
+main.markers[level="sequence"] [sequence~="colorfv"],
+main.markers[level="subsequence"] [subsequence~="colorfv"],
+main.markers[level="passage"] [passage~="colorfv"],
+main.markers[level="part"] [part~="colorfv"],
+main.markers[level="subpart"] [subpart~="colorfv"],
+main.markers[level="piece"] [piece~="colorfv"],
+main.markers[level="segment"] [segment~="colorfv"]
+{
+    color: var(--colorfv);
+}
+
+main.markers[level="book"] [book~="colorfw"],
+main.markers[level="section"] [section~="colorfw"],
+main.markers[level="subsection"] [subsection~="colorfw"],
+main.markers[level="sequence"] [sequence~="colorfw"],
+main.markers[level="subsequence"] [subsequence~="colorfw"],
+main.markers[level="passage"] [passage~="colorfw"],
+main.markers[level="part"] [part~="colorfw"],
+main.markers[level="subpart"] [subpart~="colorfw"],
+main.markers[level="piece"] [piece~="colorfw"],
+main.markers[level="segment"] [segment~="colorfw"]
+{
+    color: var(--colorfw);
+}
+
+main.markers[level="book"] [book~="colorfx"],
+main.markers[level="section"] [section~="colorfx"],
+main.markers[level="subsection"] [subsection~="colorfx"],
+main.markers[level="sequence"] [sequence~="colorfx"],
+main.markers[level="subsequence"] [subsequence~="colorfx"],
+main.markers[level="passage"] [passage~="colorfx"],
+main.markers[level="part"] [part~="colorfx"],
+main.markers[level="subpart"] [subpart~="colorfx"],
+main.markers[level="piece"] [piece~="colorfx"],
+main.markers[level="segment"] [segment~="colorfx"]
+{
+    color: var(--colorfx);
+}
+
+main.markers[level="book"] [book~="colorfy"],
+main.markers[level="section"] [section~="colorfy"],
+main.markers[level="subsection"] [subsection~="colorfy"],
+main.markers[level="sequence"] [sequence~="colorfy"],
+main.markers[level="subsequence"] [subsequence~="colorfy"],
+main.markers[level="passage"] [passage~="colorfy"],
+main.markers[level="part"] [part~="colorfy"],
+main.markers[level="subpart"] [subpart~="colorfy"],
+main.markers[level="piece"] [piece~="colorfy"],
+main.markers[level="segment"] [segment~="colorfy"]
+{
+    color: var(--colorfy);
+}
+
+main.markers[level="book"] [book~="colorfz"],
+main.markers[level="section"] [section~="colorfz"],
+main.markers[level="subsection"] [subsection~="colorfz"],
+main.markers[level="sequence"] [sequence~="colorfz"],
+main.markers[level="subsequence"] [subsequence~="colorfz"],
+main.markers[level="passage"] [passage~="colorfz"],
+main.markers[level="part"] [part~="colorfz"],
+main.markers[level="subpart"] [subpart~="colorfz"],
+main.markers[level="piece"] [piece~="colorfz"],
+main.markers[level="segment"] [segment~="colorfz"]
+{
+    color: var(--colorfz);
+}
+
+main.markers[level="book"] [book~="colorba"],
+main.markers[level="section"] [section~="colorba"],
+main.markers[level="subsection"] [subsection~="colorba"],
+main.markers[level="sequence"] [sequence~="colorba"],
+main.markers[level="subsequence"] [subsequence~="colorba"],
+main.markers[level="passage"] [passage~="colorba"],
+main.markers[level="part"] [part~="colorba"],
+main.markers[level="subpart"] [subpart~="colorba"],
+main.markers[level="piece"] [piece~="colorba"],
+main.markers[level="segment"] [segment~="colorba"]
+{
+    background-color: var(--colorba);
+}
+
+main.markers[level="book"] [book~="colorbb"],
+main.markers[level="section"] [section~="colorbb"],
+main.markers[level="subsection"] [subsection~="colorbb"],
+main.markers[level="sequence"] [sequence~="colorbb"],
+main.markers[level="subsequence"] [subsequence~="colorbb"],
+main.markers[level="passage"] [passage~="colorbb"],
+main.markers[level="part"] [part~="colorbb"],
+main.markers[level="subpart"] [subpart~="colorbb"],
+main.markers[level="piece"] [piece~="colorbb"],
+main.markers[level="segment"] [segment~="colorbb"]
+{
+    background-color: var(--colorbb);
+}
+
+main.markers[level="book"] [book~="colorbc"],
+main.markers[level="section"] [section~="colorbc"],
+main.markers[level="subsection"] [subsection~="colorbc"],
+main.markers[level="sequence"] [sequence~="colorbc"],
+main.markers[level="subsequence"] [subsequence~="colorbc"],
+main.markers[level="passage"] [passage~="colorbc"],
+main.markers[level="part"] [part~="colorbc"],
+main.markers[level="subpart"] [subpart~="colorbc"],
+main.markers[level="piece"] [piece~="colorbc"],
+main.markers[level="segment"] [segment~="colorbc"]
+{
+    background-color: var(--colorbc);
+}
+
+main.markers[level="book"] [book~="colorbd"],
+main.markers[level="section"] [section~="colorbd"],
+main.markers[level="subsection"] [subsection~="colorbd"],
+main.markers[level="sequence"] [sequence~="colorbd"],
+main.markers[level="subsequence"] [subsequence~="colorbd"],
+main.markers[level="passage"] [passage~="colorbd"],
+main.markers[level="part"] [part~="colorbd"],
+main.markers[level="subpart"] [subpart~="colorbd"],
+main.markers[level="piece"] [piece~="colorbd"],
+main.markers[level="segment"] [segment~="colorbd"]
+{
+    background-color: var(--colorbd);
+}
+
+main.markers[level="book"] [book~="colorbe"],
+main.markers[level="section"] [section~="colorbe"],
+main.markers[level="subsection"] [subsection~="colorbe"],
+main.markers[level="sequence"] [sequence~="colorbe"],
+main.markers[level="subsequence"] [subsequence~="colorbe"],
+main.markers[level="passage"] [passage~="colorbe"],
+main.markers[level="part"] [part~="colorbe"],
+main.markers[level="subpart"] [subpart~="colorbe"],
+main.markers[level="piece"] [piece~="colorbe"],
+main.markers[level="segment"] [segment~="colorbe"]
+{
+    background-color: var(--colorbe);
+}
+
+main.markers[level="book"] [book~="colorbf"],
+main.markers[level="section"] [section~="colorbf"],
+main.markers[level="subsection"] [subsection~="colorbf"],
+main.markers[level="sequence"] [sequence~="colorbf"],
+main.markers[level="subsequence"] [subsequence~="colorbf"],
+main.markers[level="passage"] [passage~="colorbf"],
+main.markers[level="part"] [part~="colorbf"],
+main.markers[level="subpart"] [subpart~="colorbf"],
+main.markers[level="piece"] [piece~="colorbf"],
+main.markers[level="segment"] [segment~="colorbf"]
+{
+    background-color: var(--colorbf);
+}
+
+main.markers[level="book"] [book~="colorbg"],
+main.markers[level="section"] [section~="colorbg"],
+main.markers[level="subsection"] [subsection~="colorbg"],
+main.markers[level="sequence"] [sequence~="colorbg"],
+main.markers[level="subsequence"] [subsequence~="colorbg"],
+main.markers[level="passage"] [passage~="colorbg"],
+main.markers[level="part"] [part~="colorbg"],
+main.markers[level="subpart"] [subpart~="colorbg"],
+main.markers[level="piece"] [piece~="colorbg"],
+main.markers[level="segment"] [segment~="colorbg"]
+{
+    background-color: var(--colorbg);
+}
+
+main.markers[level="book"] [book~="colorbh"],
+main.markers[level="section"] [section~="colorbh"],
+main.markers[level="subsection"] [subsection~="colorbh"],
+main.markers[level="sequence"] [sequence~="colorbh"],
+main.markers[level="subsequence"] [subsequence~="colorbh"],
+main.markers[level="passage"] [passage~="colorbh"],
+main.markers[level="part"] [part~="colorbh"],
+main.markers[level="subpart"] [subpart~="colorbh"],
+main.markers[level="piece"] [piece~="colorbh"],
+main.markers[level="segment"] [segment~="colorbh"]
+{
+    background-color: var(--colorbh);
+}
+
+main.markers[level="book"] [book~="colorbi"],
+main.markers[level="section"] [section~="colorbi"],
+main.markers[level="subsection"] [subsection~="colorbi"],
+main.markers[level="sequence"] [sequence~="colorbi"],
+main.markers[level="subsequence"] [subsequence~="colorbi"],
+main.markers[level="passage"] [passage~="colorbi"],
+main.markers[level="part"] [part~="colorbi"],
+main.markers[level="subpart"] [subpart~="colorbi"],
+main.markers[level="piece"] [piece~="colorbi"],
+main.markers[level="segment"] [segment~="colorbi"]
+{
+    background-color: var(--colorbi);
+}
+
+main.markers[level="book"] [book~="colorbj"],
+main.markers[level="section"] [section~="colorbj"],
+main.markers[level="subsection"] [subsection~="colorbj"],
+main.markers[level="sequence"] [sequence~="colorbj"],
+main.markers[level="subsequence"] [subsequence~="colorbj"],
+main.markers[level="passage"] [passage~="colorbj"],
+main.markers[level="part"] [part~="colorbj"],
+main.markers[level="subpart"] [subpart~="colorbj"],
+main.markers[level="piece"] [piece~="colorbj"],
+main.markers[level="segment"] [segment~="colorbj"]
+{
+    background-color: var(--colorbj);
+}
+
+main.markers[level="book"] [book~="colorbk"],
+main.markers[level="section"] [section~="colorbk"],
+main.markers[level="subsection"] [subsection~="colorbk"],
+main.markers[level="sequence"] [sequence~="colorbk"],
+main.markers[level="subsequence"] [subsequence~="colorbk"],
+main.markers[level="passage"] [passage~="colorbk"],
+main.markers[level="part"] [part~="colorbk"],
+main.markers[level="subpart"] [subpart~="colorbk"],
+main.markers[level="piece"] [piece~="colorbk"],
+main.markers[level="segment"] [segment~="colorbk"]
+{
+    background-color: var(--colorbk);
+}
+
+main.markers[level="book"] [book~="colorbl"],
+main.markers[level="section"] [section~="colorbl"],
+main.markers[level="subsection"] [subsection~="colorbl"],
+main.markers[level="sequence"] [sequence~="colorbl"],
+main.markers[level="subsequence"] [subsequence~="colorbl"],
+main.markers[level="passage"] [passage~="colorbl"],
+main.markers[level="part"] [part~="colorbl"],
+main.markers[level="subpart"] [subpart~="colorbl"],
+main.markers[level="piece"] [piece~="colorbl"],
+main.markers[level="segment"] [segment~="colorbl"]
+{
+    background-color: var(--colorbl);
+}
+
+main.markers[level="book"] [book~="colorbm"],
+main.markers[level="section"] [section~="colorbm"],
+main.markers[level="subsection"] [subsection~="colorbm"],
+main.markers[level="sequence"] [sequence~="colorbm"],
+main.markers[level="subsequence"] [subsequence~="colorbm"],
+main.markers[level="passage"] [passage~="colorbm"],
+main.markers[level="part"] [part~="colorbm"],
+main.markers[level="subpart"] [subpart~="colorbm"],
+main.markers[level="piece"] [piece~="colorbm"],
+main.markers[level="segment"] [segment~="colorbm"]
+{
+    background-color: var(--colorbm);
+}
+
+main.markers[level="book"] [book~="colorbn"],
+main.markers[level="section"] [section~="colorbn"],
+main.markers[level="subsection"] [subsection~="colorbn"],
+main.markers[level="sequence"] [sequence~="colorbn"],
+main.markers[level="subsequence"] [subsequence~="colorbn"],
+main.markers[level="passage"] [passage~="colorbn"],
+main.markers[level="part"] [part~="colorbn"],
+main.markers[level="subpart"] [subpart~="colorbn"],
+main.markers[level="piece"] [piece~="colorbn"],
+main.markers[level="segment"] [segment~="colorbn"]
+{
+    background-color: var(--colorbn);
+}
+
+main.markers[level="book"] [book~="colorbo"],
+main.markers[level="section"] [section~="colorbo"],
+main.markers[level="subsection"] [subsection~="colorbo"],
+main.markers[level="sequence"] [sequence~="colorbo"],
+main.markers[level="subsequence"] [subsequence~="colorbo"],
+main.markers[level="passage"] [passage~="colorbo"],
+main.markers[level="part"] [part~="colorbo"],
+main.markers[level="subpart"] [subpart~="colorbo"],
+main.markers[level="piece"] [piece~="colorbo"],
+main.markers[level="segment"] [segment~="colorbo"]
+{
+    background-color: var(--colorbo);
+}
+
+main.markers[level="book"] [book~="colorbp"],
+main.markers[level="section"] [section~="colorbp"],
+main.markers[level="subsection"] [subsection~="colorbp"],
+main.markers[level="sequence"] [sequence~="colorbp"],
+main.markers[level="subsequence"] [subsequence~="colorbp"],
+main.markers[level="passage"] [passage~="colorbp"],
+main.markers[level="part"] [part~="colorbp"],
+main.markers[level="subpart"] [subpart~="colorbp"],
+main.markers[level="piece"] [piece~="colorbp"],
+main.markers[level="segment"] [segment~="colorbp"]
+{
+    background-color: var(--colorbp);
+}
+
+main.markers[level="book"] [book~="colorbq"],
+main.markers[level="section"] [section~="colorbq"],
+main.markers[level="subsection"] [subsection~="colorbq"],
+main.markers[level="sequence"] [sequence~="colorbq"],
+main.markers[level="subsequence"] [subsequence~="colorbq"],
+main.markers[level="passage"] [passage~="colorbq"],
+main.markers[level="part"] [part~="colorbq"],
+main.markers[level="subpart"] [subpart~="colorbq"],
+main.markers[level="piece"] [piece~="colorbq"],
+main.markers[level="segment"] [segment~="colorbq"]
+{
+    background-color: var(--colorbq);
+}
+
+main.markers[level="book"] [book~="colorbr"],
+main.markers[level="section"] [section~="colorbr"],
+main.markers[level="subsection"] [subsection~="colorbr"],
+main.markers[level="sequence"] [sequence~="colorbr"],
+main.markers[level="subsequence"] [subsequence~="colorbr"],
+main.markers[level="passage"] [passage~="colorbr"],
+main.markers[level="part"] [part~="colorbr"],
+main.markers[level="subpart"] [subpart~="colorbr"],
+main.markers[level="piece"] [piece~="colorbr"],
+main.markers[level="segment"] [segment~="colorbr"]
+{
+    background-color: var(--colorbr);
+}
+
+main.markers[level="book"] [book~="colorbs"],
+main.markers[level="section"] [section~="colorbs"],
+main.markers[level="subsection"] [subsection~="colorbs"],
+main.markers[level="sequence"] [sequence~="colorbs"],
+main.markers[level="subsequence"] [subsequence~="colorbs"],
+main.markers[level="passage"] [passage~="colorbs"],
+main.markers[level="part"] [part~="colorbs"],
+main.markers[level="subpart"] [subpart~="colorbs"],
+main.markers[level="piece"] [piece~="colorbs"],
+main.markers[level="segment"] [segment~="colorbs"]
+{
+    background-color: var(--colorbs);
+}
+
+main.markers[level="book"] [book~="colorbt"],
+main.markers[level="section"] [section~="colorbt"],
+main.markers[level="subsection"] [subsection~="colorbt"],
+main.markers[level="sequence"] [sequence~="colorbt"],
+main.markers[level="subsequence"] [subsequence~="colorbt"],
+main.markers[level="passage"] [passage~="colorbt"],
+main.markers[level="part"] [part~="colorbt"],
+main.markers[level="subpart"] [subpart~="colorbt"],
+main.markers[level="piece"] [piece~="colorbt"],
+main.markers[level="segment"] [segment~="colorbt"]
+{
+    background-color: var(--colorbt);
+}
+
+main.markers[level="book"] [book~="colorbu"],
+main.markers[level="section"] [section~="colorbu"],
+main.markers[level="subsection"] [subsection~="colorbu"],
+main.markers[level="sequence"] [sequence~="colorbu"],
+main.markers[level="subsequence"] [subsequence~="colorbu"],
+main.markers[level="passage"] [passage~="colorbu"],
+main.markers[level="part"] [part~="colorbu"],
+main.markers[level="subpart"] [subpart~="colorbu"],
+main.markers[level="piece"] [piece~="colorbu"],
+main.markers[level="segment"] [segment~="colorbu"]
+{
+    background-color: var(--colorbu);
+}
+
+main.markers[level="book"] [book~="colorbv"],
+main.markers[level="section"] [section~="colorbv"],
+main.markers[level="subsection"] [subsection~="colorbv"],
+main.markers[level="sequence"] [sequence~="colorbv"],
+main.markers[level="subsequence"] [subsequence~="colorbv"],
+main.markers[level="passage"] [passage~="colorbv"],
+main.markers[level="part"] [part~="colorbv"],
+main.markers[level="subpart"] [subpart~="colorbv"],
+main.markers[level="piece"] [piece~="colorbv"],
+main.markers[level="segment"] [segment~="colorbv"]
+{
+    background-color: var(--colorbv);
+}
+
+main.markers[level="book"] [book~="colorbw"],
+main.markers[level="section"] [section~="colorbw"],
+main.markers[level="subsection"] [subsection~="colorbw"],
+main.markers[level="sequence"] [sequence~="colorbw"],
+main.markers[level="subsequence"] [subsequence~="colorbw"],
+main.markers[level="passage"] [passage~="colorbw"],
+main.markers[level="part"] [part~="colorbw"],
+main.markers[level="subpart"] [subpart~="colorbw"],
+main.markers[level="piece"] [piece~="colorbw"],
+main.markers[level="segment"] [segment~="colorbw"]
+{
+    background-color: var(--colorbw);
+}
+
+main.markers[level="book"] [book~="colorbx"],
+main.markers[level="section"] [section~="colorbx"],
+main.markers[level="subsection"] [subsection~="colorbx"],
+main.markers[level="sequence"] [sequence~="colorbx"],
+main.markers[level="subsequence"] [subsequence~="colorbx"],
+main.markers[level="passage"] [passage~="colorbx"],
+main.markers[level="part"] [part~="colorbx"],
+main.markers[level="subpart"] [subpart~="colorbx"],
+main.markers[level="piece"] [piece~="colorbx"],
+main.markers[level="segment"] [segment~="colorbx"]
+{
+    background-color: var(--colorbx);
+}
+
+main.markers[level="book"] [book~="colorby"],
+main.markers[level="section"] [section~="colorby"],
+main.markers[level="subsection"] [subsection~="colorby"],
+main.markers[level="sequence"] [sequence~="colorby"],
+main.markers[level="subsequence"] [subsequence~="colorby"],
+main.markers[level="passage"] [passage~="colorby"],
+main.markers[level="part"] [part~="colorby"],
+main.markers[level="subpart"] [subpart~="colorby"],
+main.markers[level="piece"] [piece~="colorby"],
+main.markers[level="segment"] [segment~="colorby"]
+{
+    background-color: var(--colorby);
+}
+
+main.markers[level="book"] [book~="colorbz"],
+main.markers[level="section"] [section~="colorbz"],
+main.markers[level="subsection"] [subsection~="colorbz"],
+main.markers[level="sequence"] [sequence~="colorbz"],
+main.markers[level="subsequence"] [subsequence~="colorbz"],
+main.markers[level="passage"] [passage~="colorbz"],
+main.markers[level="part"] [part~="colorbz"],
+main.markers[level="subpart"] [subpart~="colorbz"],
+main.markers[level="piece"] [piece~="colorbz"],
+main.markers[level="segment"] [segment~="colorbz"]
+{
+    background-color: var(--colorbz);
+}
+
+main.markers[level="book"] [book~="prefixplus"]::before,
+main.markers[level="section"] [section~="prefixplus"]::before,
+main.markers[level="subsection"] [subsection~="prefixplus"]::before,
+main.markers[level="sequence"] [sequence~="prefixplus"]::before,
+main.markers[level="subsequence"] [subsequence~="prefixplus"]::before,
+main.markers[level="passage"] [passage~="prefixplus"]::before,
+main.markers[level="part"] [part~="prefixplus"]::before,
+main.markers[level="subpart"] [subpart~="prefixplus"]::before,
+main.markers[level="piece"] [piece~="prefixplus"]::before,
+main.markers[level="segment"] [segment~="prefixplus"]::before
+{
+    content: "+  "; font-size: var(--fontsize); font-family: monospace; white-space: pre; letter-spacing: var(--prefixletterspacing); color: black;
+}
+
+main.markers[level="book"] [book~="prefixminus"]::before,
+main.markers[level="section"] [section~="prefixminus"]::before,
+main.markers[level="subsection"] [subsection~="prefixminus"]::before,
+main.markers[level="sequence"] [sequence~="prefixminus"]::before,
+main.markers[level="subsequence"] [subsequence~="prefixminus"]::before,
+main.markers[level="passage"] [passage~="prefixminus"]::before,
+main.markers[level="part"] [part~="prefixminus"]::before,
+main.markers[level="subpart"] [subpart~="prefixminus"]::before,
+main.markers[level="piece"] [piece~="prefixminus"]::before,
+main.markers[level="segment"] [segment~="prefixminus"]::before
+{
+    content: "−  "; font-size: var(--fontsize); font-family: monospace; white-space: pre; letter-spacing: var(--prefixletterspacing); color: black;
+}
+
+main.markers[level="book"] [book~="prefixequal"]::before,
+main.markers[level="section"] [section~="prefixequal"]::before,
+main.markers[level="subsection"] [subsection~="prefixequal"]::before,
+main.markers[level="sequence"] [sequence~="prefixequal"]::before,
+main.markers[level="subsequence"] [subsequence~="prefixequal"]::before,
+main.markers[level="passage"] [passage~="prefixequal"]::before,
+main.markers[level="part"] [part~="prefixequal"]::before,
+main.markers[level="subpart"] [subpart~="prefixequal"]::before,
+main.markers[level="piece"] [piece~="prefixequal"]::before,
+main.markers[level="segment"] [segment~="prefixequal"]::before
+{
+    content: "=  "; font-size: var(--fontsize); font-family: monospace; white-space: pre; letter-spacing: var(--prefixletterspacing); color: black;
+}
+
+main.markers[level="book"] [book~="prefixdot"]::before,
+main.markers[level="section"] [section~="prefixdot"]::before,
+main.markers[level="subsection"] [subsection~="prefixdot"]::before,
+main.markers[level="sequence"] [sequence~="prefixdot"]::before,
+main.markers[level="subsequence"] [subsequence~="prefixdot"]::before,
+main.markers[level="passage"] [passage~="prefixdot"]::before,
+main.markers[level="part"] [part~="prefixdot"]::before,
+main.markers[level="subpart"] [subpart~="prefixdot"]::before,
+main.markers[level="piece"] [piece~="prefixdot"]::before,
+main.markers[level="segment"] [segment~="prefixdot"]::before
+{
+    content: ".  "; font-size: var(--fontsize); font-family: monospace; white-space: pre; letter-spacing: var(--prefixletterspacing); color: black;
+}
+
+main.markers[level="book"] [book~="prefixpoint"]::before,
+main.markers[level="section"] [section~="prefixpoint"]::before,
+main.markers[level="subsection"] [subsection~="prefixpoint"]::before,
+main.markers[level="sequence"] [sequence~="prefixpoint"]::before,
+main.markers[level="subsequence"] [subsequence~="prefixpoint"]::before,
+main.markers[level="passage"] [passage~="prefixpoint"]::before,
+main.markers[level="part"] [part~="prefixpoint"]::before,
+main.markers[level="subpart"] [subpart~="prefixpoint"]::before,
+main.markers[level="piece"] [piece~="prefixpoint"]::before,
+main.markers[level="segment"] [segment~="prefixpoint"]::before
+{
+    content: "·  "; font-size: var(--fontsize); font-family: monospace; white-space: pre; letter-spacing: var(--prefixletterspacing); color: black;
+}
+
+main.markers[level="book"] [book~="prefixcolon"]::before,
+main.markers[level="section"] [section~="prefixcolonon"]::before,
+main.markers[level="subsection"] [subsection~="prefixcolon"]::before,
+main.markers[level="sequence"] [sequence~="prefixcolon"]::before,
+main.markers[level="subsequence"] [subsequence~="prefixcolon"]::before,
+main.markers[level="passage"] [passage~="prefixcolon"]::before,
+main.markers[level="part"] [part~="prefixcolon"]::before,
+main.markers[level="subpart"] [subpart~="prefixcolon"]::before,
+main.markers[level="piece"] [piece~="prefixcolon"]::before,
+main.markers[level="segment"] [segment~="prefixcolon"]::before
+{
+    content: ":  "; font-size: var(--fontsize); font-family: monospace; white-space: pre; letter-spacing: var(--prefixletterspacing); color: black;
+}
+
+main.markers[level="book"] [book~="prefix2colons"]::before,
+main.markers[level="section"] [section~="prefixcoloncolon"]::before,
+main.markers[level="subsection"] [subsection~="prefixcolononcolon"]::before,
+main.markers[level="sequence"] [sequence~="prefix2colons"]::before,
+main.markers[level="subsequence"] [subsequence~="prefix2colons"]::before,
+main.markers[level="passage"] [passage~="prefix2colons"]::before,
+main.markers[level="part"] [part~="prefix2colons"]::before,
+main.markers[level="subpart"] [subpart~="prefix2colons"]::before,
+main.markers[level="piece"] [piece~="prefix2colons"]::before,
+main.markers[level="segment"] [segment~="prefix2colons"]::before
+{
+    content: ":: "; font-size: var(--fontsize); font-family: monospace; white-space: pre; letter-spacing: var(--prefixletterspacing); color: black;
+}
+
+main.markers[level="book"] [book~="prefixmult"]::before,
+main.markers[level="section"] [section~="prefixmult"]::before,
+main.markers[level="subsection"] [subsection~="prefixmult"]::before,
+main.markers[level="sequence"] [sequence~="prefixmult"]::before,
+main.markers[level="subsequence"] [subsequence~="prefixmult"]::before,
+main.markers[level="passage"] [passage~="prefixmult"]::before,
+main.markers[level="part"] [part~="prefixmult"]::before,
+main.markers[level="subpart"] [subpart~="prefixmult"]::before,
+main.markers[level="piece"] [piece~="prefixmult"]::before,
+main.markers[level="segment"] [segment~="prefixmult"]::before
+{
+    content: "×  "; font-size: var(--fontsize); font-family: monospace; white-space: pre; letter-spacing: var(--prefixletterspacing); color: black;
+}
+
+main.markers[level="book"] [book~="prefixa"]::before,
+main.markers[level="section"] [section~="prefixa"]::before,
+main.markers[level="subsection"] [subsection~="prefixa"]::before,
+main.markers[level="sequence"] [sequence~="prefixa"]::before,
+main.markers[level="subsequence"] [subsequence~="prefixa"]::before,
+main.markers[level="passage"] [passage~="prefixa"]::before,
+main.markers[level="part"] [part~="prefixa"]::before,
+main.markers[level="subpart"] [subpart~="prefixa"]::before,
+main.markers[level="piece"] [piece~="prefixa"]::before,
+main.markers[level="segment"] [segment~="prefixa"]::before
+{
+    content: "a  "; font-size: var(--fontsize); font-family: monospace; white-space: pre; color: black;
+}
+
+main.markers[level="book"] [book~="prefixb"]::before,
+main.markers[level="section"] [section~="prefixb"]::before,
+main.markers[level="subsection"] [subsection~="prefixb"]::before,
+main.markers[level="sequence"] [sequence~="prefixb"]::before,
+main.markers[level="subsequence"] [subsequence~="prefixb"]::before,
+main.markers[level="passage"] [passage~="prefixb"]::before,
+main.markers[level="part"] [part~="prefixb"]::before,
+main.markers[level="subpart"] [subpart~="prefixb"]::before,
+main.markers[level="piece"] [piece~="prefixb"]::before,
+main.markers[level="segment"] [segment~="prefixb"]::before
+{
+    content: "b  "; font-size: var(--fontsize); font-family: monospace; white-space: pre; color: black;
+}
+
+main.markers[level="book"] [book~="prefixc"]::before,
+main.markers[level="section"] [section~="prefixc"]::before,
+main.markers[level="subsection"] [subsection~="prefixc"]::before,
+main.markers[level="sequence"] [sequence~="prefixc"]::before,
+main.markers[level="subsequence"] [subsequence~="prefixc"]::before,
+main.markers[level="passage"] [passage~="prefixc"]::before,
+main.markers[level="part"] [part~="prefixc"]::before,
+main.markers[level="subpart"] [subpart~="prefixc"]::before,
+main.markers[level="piece"] [piece~="prefixc"]::before,
+main.markers[level="segment"] [segment~="prefixc"]::before
+{
+    content: "c  "; font-size: var(--fontsize); font-family: monospace; white-space: pre; color: black;
+}
+
+main.markers[level="book"] [book~="prefixaprim"]::before,
+main.markers[level="section"] [section~="prefixap"]::before,
+main.markers[level="subsection"] [subsection~="prefixaprim"]::before,
+main.markers[level="sequence"] [sequence~="prefixaprim"]::before,
+main.markers[level="subsequence"] [subsequence~="prefixaprim"]::before,
+main.markers[level="passage"] [passage~="prefixaprim"]::before,
+main.markers[level="part"] [part~="prefixaprim"]::before,
+main.markers[level="subpart"] [subpart~="prefixaprim"]::before,
+main.markers[level="piece"] [piece~="prefixaprim"]::before,
+main.markers[level="segment"] [segment~="prefixaprim"]::before
+{
+    content: "a’ "; font-size: var(--fontsize); font-family: monospace; white-space: pre; color: black;
+}
+
+main.markers[level="book"] [book~="prefixbprim"]::before,
+main.markers[level="section"] [section~="prefixbp"]::before,
+main.markers[level="subsection"] [subsection~="prefixbprim"]::before,
+main.markers[level="sequence"] [sequence~="prefixbprim"]::before,
+main.markers[level="subsequence"] [subsequence~="prefixbprim"]::before,
+main.markers[level="passage"] [passage~="prefixbprim"]::before,
+main.markers[level="part"] [part~="prefixbprim"]::before,
+main.markers[level="subpart"] [subpart~="prefixbprim"]::before,
+main.markers[level="piece"] [piece~="prefixbprim"]::before,
+main.markers[level="segment"] [segment~="prefixbprim"]::before
+{
+    content: "b’ "; font-size: var(--fontsize); font-family: monospace; white-space: pre; color: black;
+}
+
+main.markers[level="book"] [book~="prefixcprim"]::before,
+main.markers[level="section"] [section~="prefixcp"]::before,
+main.markers[level="subsection"] [subsection~="prefixcprim"]::before,
+main.markers[level="sequence"] [sequence~="prefixcprim"]::before,
+main.markers[level="subsequence"] [subsequence~="prefixcprim"]::before,
+main.markers[level="passage"] [passage~="prefixcprim"]::before,
+main.markers[level="part"] [part~="prefixcprim"]::before,
+main.markers[level="subpart"] [subpart~="prefixcprim"]::before,
+main.markers[level="piece"] [piece~="prefixcprim"]::before,
+main.markers[level="segment"] [segment~="prefixcprim"]::before
+{
+    content: "c’ "; font-size: var(--fontsize); font-family: monospace; white-space: pre; color: black;
+}
+
+main.markers[level="book"] [book~="left0c5"],
+main.markers[level="section"] [section~="left0c5"],
+main.markers[level="subsection"] [subsection~="left0c5"],
+main.markers[level="sequence"] [sequence~="left0c5"],
+main.markers[level="subsequence"] [subsequence~="left0c5"],
+main.markers[level="passage"] [passage~="left0c5"],
+main.markers[level="part"] [part~="left0c5"],
+main.markers[level="subpart"] [subpart~="left0c5"],
+main.markers[level="piece"] [piece~="left0c5"],
+main.markers[level="segment"] [segment~="left0c5"]
+{
+    position: relative; left: var(--term-half);
+}
+
+main.markers[level="book"] [book~="left1"],
+main.markers[level="section"] [section~="left1"],
+main.markers[level="subsection"] [subsection~="left1"],
+main.markers[level="sequence"] [sequence~="left1"],
+main.markers[level="subsequence"] [subsequence~="left1"],
+main.markers[level="passage"] [passage~="left1"],
+main.markers[level="part"] [part~="left1"],
+main.markers[level="subpart"] [subpart~="left1"],
+main.markers[level="piece"] [piece~="left1"],
+main.markers[level="segment"] [segment~="left1"]
+{
+    position: relative; left: var(--term-one);
+}
+
+main.markers[level="book"] [book~="left1c5"],
+main.markers[level="section"] [section~="left1c5"],
+main.markers[level="subsection"] [subsection~="left1c5"],
+main.markers[level="sequence"] [sequence~="left1c5"],
+main.markers[level="subsequence"] [subsequence~="left1c5"],
+main.markers[level="passage"] [passage~="left1c5"],
+main.markers[level="part"] [part~="left1c5"],
+main.markers[level="subpart"] [subpart~="left1c5"],
+main.markers[level="piece"] [piece~="left1c5"],
+main.markers[level="segment"] [segment~="left1c5"]
+{
+    position: relative; left: var(--term-onehalf);
+}
+
+main.markers[level="book"] [book~="left2"],
+main.markers[level="section"] [section~="left2"],
+main.markers[level="subsection"] [subsection~="left2"],
+main.markers[level="sequence"] [sequence~="left2"],
+main.markers[level="subsequence"] [subsequence~="left2"],
+main.markers[level="passage"] [passage~="left2"],
+main.markers[level="part"] [part~="left2"],
+main.markers[level="subpart"] [subpart~="left2"],
+main.markers[level="piece"] [piece~="left2"],
+main.markers[level="segment"] [segment~="left2"]
+{
+    position: relative; left: var(--term-two);
+}
+
+main.markers[level="book"] [book~="left2c5"],
+main.markers[level="section"] [section~="left2c5"],
+main.markers[level="subsection"] [subsection~="left2c5"],
+main.markers[level="sequence"] [sequence~="left2c5"],
+main.markers[level="subsequence"] [subsequence~="left2c5"],
+main.markers[level="passage"] [passage~="left2c5"],
+main.markers[level="part"] [part~="left2c5"],
+main.markers[level="subpart"] [subpart~="left2c5"],
+main.markers[level="piece"] [piece~="left2c5"],
+main.markers[level="segment"] [segment~="left2c5"]
+{
+    position: relative; left: var(--term-twohalf);
+}
+
+main.markers[level="book"] [book~="left3"],
+main.markers[level="section"] [section~="left3"],
+main.markers[level="subsection"] [subsection~="left3"],
+main.markers[level="sequence"] [sequence~="left3"],
+main.markers[level="subsequence"] [subsequence~="left3"],
+main.markers[level="passage"] [passage~="left3"],
+main.markers[level="part"] [part~="left3"],
+main.markers[level="subpart"] [subpart~="left3"],
+main.markers[level="piece"] [piece~="left3"],
+main.markers[level="segment"] [segment~="left3"]
+{
+    position: relative; left: var(--term-three);
+}
+
+main.markers[level="book"] [book~="rigth1d16"],
+main.markers[level="section"] [section~="rigth1d16"],
+main.markers[level="subsection"] [subsection~="rigth1d16"],
+main.markers[level="sequence"] [sequence~="rigth1d16"],
+main.markers[level="subsequence"] [subsequence~="rigth1d16"],
+main.markers[level="passage"] [passage~="rigth1d16"],
+main.markers[level="part"] [part~="rigth1d16"],
+main.markers[level="subpart"] [subpart~="rigth1d16"],
+main.markers[level="piece"] [piece~="rigth1d16"],
+main.markers[level="segment"] [segment~="rigth1d16"]
+{
+    position: relative; left: var(--termsixteenth);
+}
+
+main.markers[level="book"] [book~="right1d8"],
+main.markers[level="section"] [section~="right1d8"],
+main.markers[level="subsection"] [subsection~="right1d8"],
+main.markers[level="sequence"] [sequence~="right1d8"],
+main.markers[level="subsequence"] [subsequence~="right1d8"],
+main.markers[level="passage"] [passage~="right1d8"],
+main.markers[level="part"] [part~="right1d8"],
+main.markers[level="subpart"] [subpart~="right1d8"],
+main.markers[level="piece"] [piece~="right1d8"],
+main.markers[level="segment"] [segment~="right1d8"]
+{
+    position: relative; left: var(--termeighth);
+}
+
+main.markers[level="book"] [book~="right1d4"],
+main.markers[level="section"] [section~="right1d4"],
+main.markers[level="subsection"] [subsection~="right1d4"],
+main.markers[level="sequence"] [sequence~="right1d4"],
+main.markers[level="subsequence"] [subsequence~="right1d4"],
+main.markers[level="passage"] [passage~="right1d4"],
+main.markers[level="part"] [part~="right1d4"],
+main.markers[level="subpart"] [subpart~="right1d4"],
+main.markers[level="piece"] [piece~="right1d4"],
+main.markers[level="segment"] [segment~="right1d4"]
+{
+    position: relative; left: var(--termquarter);
+}
+
+main.markers[level="book"] [book~="right0c5"],
+main.markers[level="section"] [section~="right0c5"],
+main.markers[level="subsection"] [subsection~="right0c5"],
+main.markers[level="sequence"] [sequence~="right0c5"],
+main.markers[level="subsequence"] [subsequence~="right0c5"],
+main.markers[level="passage"] [passage~="right0c5"],
+main.markers[level="part"] [part~="right0c5"],
+main.markers[level="subpart"] [subpart~="right0c5"],
+main.markers[level="piece"] [piece~="right0c5"],
+main.markers[level="segment"] [segment~="right0c5"]
+{
+    position: relative; left: var(--termhalf);
+}
+
+main.markers[level="book"] [book~="right1"],
+main.markers[level="section"] [section~="right1"],
+main.markers[level="subsection"] [subsection~="right1"],
+main.markers[level="sequence"] [sequence~="right1"],
+main.markers[level="subsequence"] [subsequence~="right1"],
+main.markers[level="passage"] [passage~="right1"],
+main.markers[level="part"] [part~="right1"],
+main.markers[level="subpart"] [subpart~="right1"],
+main.markers[level="piece"] [piece~="right1"],
+main.markers[level="segment"] [segment~="right1"]
+{
+    position: relative; left: var(--termone);
+}
+
+main.markers[level="book"] [book~="right1c5"],
+main.markers[level="section"] [section~="right1c5"],
+main.markers[level="subsection"] [subsection~="right1c5"],
+main.markers[level="sequence"] [sequence~="right1c5"],
+main.markers[level="subsequence"] [subsequence~="right1c5"],
+main.markers[level="passage"] [passage~="right1c5"],
+main.markers[level="part"] [part~="right1c5"],
+main.markers[level="subpart"] [subpart~="right1c5"],
+main.markers[level="piece"] [piece~="right1c5"],
+main.markers[level="segment"] [segment~="right1c5"]
+{
+    position: relative; left: var(--termonehalf);
+}
+
+main.markers[level="book"] [book~="right2"],
+main.markers[level="section"] [section~="right2"],
+main.markers[level="subsection"] [subsection~="right2"],
+main.markers[level="sequence"] [sequence~="right2"],
+main.markers[level="subsequence"] [subsequence~="right2"],
+main.markers[level="passage"] [passage~="right2"],
+main.markers[level="part"] [part~="right2"],
+main.markers[level="subpart"] [subpart~="right2"],
+main.markers[level="piece"] [piece~="right2"],
+main.markers[level="segment"] [segment~="right2"]
+{
+    position: relative; left: var(--termtwo);
+}
+
+main.markers[level="book"] [book~="right2c5"],
+main.markers[level="section"] [section~="right2c5"],
+main.markers[level="subsection"] [subsection~="right2c5"],
+main.markers[level="sequence"] [sequence~="right2c5"],
+main.markers[level="subsequence"] [subsequence~="right2c5"],
+main.markers[level="passage"] [passage~="right2c5"],
+main.markers[level="part"] [part~="right2c5"],
+main.markers[level="subpart"] [subpart~="right2c5"],
+main.markers[level="piece"] [piece~="right2c5"],
+main.markers[level="segment"] [segment~="right2c5"]
+{
+    position: relative; left: var(--termtwohalf);
+}
+
+main.markers[level="book"] [book~="right3"],
+main.markers[level="section"] [section~="right3"],
+main.markers[level="subsection"] [subsection~="right3"],
+main.markers[level="sequence"] [sequence~="right3"],
+main.markers[level="subsequence"] [subsequence~="right3"],
+main.markers[level="passage"] [passage~="right3"],
+main.markers[level="part"] [part~="right3"],
+main.markers[level="subpart"] [subpart~="right3"],
+main.markers[level="piece"] [piece~="right3"],
+main.markers[level="segment"] [segment~="right3"]
+{
+    position: relative; left: var(--termthree);
+}
+
+main.markers[level="book"] [book~="down1"],
+main.markers[level="section"] [section~="down1"],
+main.markers[level="subsection"] [subsection~="down1"],
+main.markers[level="sequence"] [sequence~="down1"],
+main.markers[level="subsequence"] [subsequence~="down1"],
+main.markers[level="passage"] [passage~="down1"],
+main.markers[level="part"] [part~="down1"],
+main.markers[level="subpart"] [subpart~="down1"],
+main.markers[level="piece"] [piece~="down1"],
+main.markers[level="segment"] [segment~="down1"]
+{
+    position: relative; top: var(--line-one);   margin-bottom: var(--line-one);
+}
+
+main.markers[level="book"] [book~="down2"],
+main.markers[level="section"] [section~="down2"],
+main.markers[level="subsection"] [subsection~="down2"],
+main.markers[level="sequence"] [sequence~="down2"],
+main.markers[level="subsequence"] [subsequence~="down2"],
+main.markers[level="passage"] [passage~="down2"],
+main.markers[level="part"] [part~="down2"],
+main.markers[level="subpart"] [subpart~="down2"],
+main.markers[level="piece"] [piece~="down2"],
+main.markers[level="segment"] [segment~="down2"]
+{
+    position: relative; top: var(--line-two);   margin-bottom: var(--line-two);
+}
+
+main.markers[level="book"] [book~="down3"],
+main.markers[level="section"] [section~="down3"],
+main.markers[level="subsection"] [subsection~="down3"],
+main.markers[level="sequence"] [sequence~="down3"],
+main.markers[level="subsequence"] [subsequence~="down3"],
+main.markers[level="passage"] [passage~="down3"],
+main.markers[level="part"] [part~="down3"],
+main.markers[level="subpart"] [subpart~="down3"],
+main.markers[level="piece"] [piece~="down3"],
+main.markers[level="segment"] [segment~="down3"]
+{
+    position: relative; top: var(--line-three); margin-bottom: var(--line-three);
+}
+
+main.markers[level="book"] [book~="bold"],
+main.markers[level="section"] [section~="bold"],
+main.markers[level="subsection"] [subsection~="bold"],
+main.markers[level="sequence"] [sequence~="bold"],
+main.markers[level="subsequence"] [subsequence~="bold"],
+main.markers[level="passage"] [passage~="bold"],
+main.markers[level="part"] [part~="bold"],
+main.markers[level="subpart"] [subpart~="bold"],
+main.markers[level="piece"] [piece~="bold"],
+main.markers[level="segment"] [segment~="bold"]
+{
+    font-weight: bold;
+}
+
+main.markers[level="book"] [book~="italic"],
+main.markers[level="section"] [section~="italic"],
+main.markers[level="subsection"] [subsection~="italic"],
+main.markers[level="sequence"] [sequence~="italic"],
+main.markers[level="subsequence"] [subsequence~="italic"],
+main.markers[level="passage"] [passage~="italic"],
+main.markers[level="part"] [part~="italic"],
+main.markers[level="subpart"] [subpart~="italic"],
+main.markers[level="piece"] [piece~="italic"],
+main.markers[level="segment"] [segment~="italic"]
+{
+    font-style: italic;
+}
+
+main.markers[level="book"] [book~="smallcaps"],
+main.markers[level="section"] [section~="smallcaps"],
+main.markers[level="subsection"] [subsection~="smallcaps"],
+main.markers[level="sequence"] [sequence~="smallcaps"],
+main.markers[level="subsequence"] [subsequence~="smallcaps"],
+main.markers[level="passage"] [passage~="smallcaps"],
+main.markers[level="part"] [part~="smallcaps"],
+main.markers[level="subpart"] [subpart~="smallcaps"],
+main.markers[level="piece"] [piece~="smallcaps"],
+main.markers[level="segment"] [segment~="smallcaps"]
+{
+    font-variant-caps: small-caps;
+}
+
+main.markers[level="book"] [book~="center"],
+main.markers[level="section"] [section~="center"],
+main.markers[level="subsection"] [subsection~="center"],
+main.markers[level="sequence"] [sequence~="center"],
+main.markers[level="subsequence"] [subsequence~="center"],
+main.markers[level="passage"] [passage~="center"],
+main.markers[level="part"] [part~="center"],
+main.markers[level="subpart"] [subpart~="center"],
+main.markers[level="piece"] [piece~="center"],
+main.markers[level="segment"] [segment~="center"]
+{
+    display: block; text-align: center; margin: var(--fontsize) auto; width: 80%;
+}
+
+/*
+ * Terms
+ */
+
+main[mode="extreme"][level="book"] [book~="extreme"],
+main[mode="extreme"][level="section"] [section~="extreme"],
+main[mode="extreme"][level="subsection"] [subsection~="extreme"],
+main[mode="extreme"][level="sequence"] [sequence~="extreme"],
+main[mode="extreme"][level="subsequence"] [subsequence~="extreme"],
+main[mode="extreme"][level="passage"] [passage~="extreme"],
+main[mode="extreme"][level="part"] [part~="extreme"],
+main[mode="extreme"][level="subpart"] [subpart~="extreme"],
+main[mode="extreme"][level="piece"] [piece~="extreme"],
+main[mode="extreme"][level="segment"] [segment~="extreme"],
+main[mode="extreme"][level="member"] [segment~="extreme"],
+main[mode="extreme"][level="term"] [segment~="extreme"],
+main[mode="extreme"][level="word"] [segment~="extreme"],
+
+main[mode="initial"][level="book"] [book~="initial"],
+main[mode="initial"][level="section"] [section~="initial"],
+main[mode="initial"][level="subsection"] [subsection~="initial"],
+main[mode="initial"][level="sequence"] [sequence~="initial"],
+main[mode="initial"][level="subsequence"] [subsequence~="initial"],
+main[mode="initial"][level="passage"] [passage~="initial"],
+main[mode="initial"][level="part"] [part~="initial"],
+main[mode="initial"][level="subpart"] [subpart~="initial"],
+main[mode="initial"][level="piece"] [piece~="initial"],
+main[mode="initial"][level="segment"] [segment~="initial"],
+main[mode="initial"][level="member"] [segment~="initial"],
+main[mode="initial"][level="term"] [segment~="initial"],
+main[mode="initial"][level="word"] [segment~="initial"],
+
+main[mode="central"][level="book"] [book~="central"],
+main[mode="central"][level="section"] [section~="central"],
+main[mode="central"][level="subsection"] [subsection~="central"],
+main[mode="central"][level="sequence"] [sequence~="central"],
+main[mode="central"][level="subsequence"] [subsequence~="central"],
+main[mode="central"][level="passage"] [passage~="central"],
+main[mode="central"][level="part"] [part~="central"],
+main[mode="central"][level="subpart"] [subpart~="central"],
+main[mode="central"][level="piece"] [piece~="central"],
+main[mode="central"][level="segment"] [segment~="central"],
+main[mode="central"][level="member"] [segment~="central"],
+main[mode="central"][level="term"] [segment~="central"],
+main[mode="central"][level="word"] [segment~="central"],
+
+main[mode="final"][level="book"] [book~="final"],
+main[mode="final"][level="section"] [section~="final"],
+main[mode="final"][level="subsection"] [subsection~="final"],
+main[mode="final"][level="sequence"] [sequence~="final"],
+main[mode="final"][level="subsequence"] [subsequence~="final"],
+main[mode="final"][level="passage"] [passage~="final"],
+main[mode="final"][level="part"] [part~="final"],
+main[mode="final"][level="subpart"] [subpart~="final"],
+main[mode="final"][level="piece"] [piece~="final"],
+main[mode="final"][level="segment"] [segment~="final"],
+main[mode="final"][level="member"] [segment~="final"],
+main[mode="final"][level="term"] [segment~="final"],
+main[mode="final"][level="word"] [segment~="final"],
+
+main[mode="median"][level="book"] [book~="median"],
+main[mode="median"][level="section"] [section~="median"],
+main[mode="median"][level="subsection"] [subsection~="median"],
+main[mode="median"][level="sequence"] [sequence~="median"],
+main[mode="median"][level="subsequence"] [subsequence~="median"],
+main[mode="median"][level="passage"] [passage~="median"],
+main[mode="median"][level="part"] [part~="median"],
+main[mode="median"][level="subpart"] [subpart~="median"],
+main[mode="median"][level="piece"] [piece~="median"],
+main[mode="median"][level="segment"] [segment~="median"],
+main[mode="median"][level="member"] [segment~="median"],
+main[mode="median"][level="term"] [segment~="median"],
+main[mode="median"][level="word"] [segment~="median"],
+
+main[mode="repeated"][level="book"] [book~="repeated"],
+main[mode="repeated"][level="section"] [section~="repeated"],
+main[mode="repeated"][level="subsection"] [subsection~="repeated"],
+main[mode="repeated"][level="sequence"] [sequence~="repeated"],
+main[mode="repeated"][level="subsequence"] [subsequence~="repeated"],
+main[mode="repeated"][level="passage"] [passage~="repeated"],
+main[mode="repeated"][level="part"] [part~="repeated"],
+main[mode="repeated"][level="subpart"] [subpart~="repeated"],
+main[mode="repeated"][level="piece"] [piece~="repeated"],
+main[mode="repeated"][level="segment"] [segment~="repeated"],
+main[mode="repeated"][level="member"] [segment~="repeated"],
+main[mode="repeated"][level="term"] [segment~="repeated"],
+main[mode="repeated"][level="word"] [segment~="repeated"],
+
+main[mode="markermodes"][level="book"] [book~="extreme"],
+main[mode="markermodes"][level="section"] [section~="extreme"],
+main[mode="markermodes"][level="subsection"] [subsection~="extreme"],
+main[mode="markermodes"][level="sequence"] [sequence~="extreme"],
+main[mode="markermodes"][level="subsequence"] [subsequence~="extreme"],
+main[mode="markermodes"][level="passage"] [passage~="extreme"],
+main[mode="markermodes"][level="part"] [part~="extreme"],
+main[mode="markermodes"][level="subpart"] [subpart~="extreme"],
+main[mode="markermodes"][level="piece"] [piece~="extreme"],
+main[mode="markermodes"][level="segment"] [segment~="extreme"],
+main[mode="markermodes"][level="member"] [segment~="extreme"],
+main[mode="markermodes"][level="term"] [segment~="extreme"],
+main[mode="markermodes"][level="word"] [segment~="extreme"],
+
+main[mode="markermodes"][level="book"] [book~="initial"],
+main[mode="markermodes"][level="section"] [section~="initial"],
+main[mode="markermodes"][level="subsection"] [subsection~="initial"],
+main[mode="markermodes"][level="sequence"] [sequence~="initial"],
+main[mode="markermodes"][level="subsequence"] [subsequence~="initial"],
+main[mode="markermodes"][level="passage"] [passage~="initial"],
+main[mode="markermodes"][level="part"] [part~="initial"],
+main[mode="markermodes"][level="subpart"] [subpart~="initial"],
+main[mode="markermodes"][level="piece"] [piece~="initial"],
+main[mode="markermodes"][level="segment"] [segment~="initial"],
+main[mode="markermodes"][level="member"] [segment~="initial"],
+main[mode="markermodes"][level="term"] [segment~="initial"],
+main[mode="markermodes"][level="word"] [segment~="initial"],
+
+main[mode="markermodes"][level="book"] [book~="central"],
+main[mode="markermodes"][level="section"] [section~="central"],
+main[mode="markermodes"][level="subsection"] [subsection~="central"],
+main[mode="markermodes"][level="sequence"] [sequence~="central"],
+main[mode="markermodes"][level="subsequence"] [subsequence~="central"],
+main[mode="markermodes"][level="passage"] [passage~="central"],
+main[mode="markermodes"][level="part"] [part~="central"],
+main[mode="markermodes"][level="subpart"] [subpart~="central"],
+main[mode="markermodes"][level="piece"] [piece~="central"],
+main[mode="markermodes"][level="segment"] [segment~="central"],
+main[mode="markermodes"][level="member"] [segment~="central"],
+main[mode="markermodes"][level="term"] [segment~="central"],
+main[mode="markermodes"][level="word"] [segment~="central"],
+
+main[mode="markermodes"][level="book"] [book~="final"],
+main[mode="markermodes"][level="section"] [section~="final"],
+main[mode="markermodes"][level="subsection"] [subsection~="final"],
+main[mode="markermodes"][level="sequence"] [sequence~="final"],
+main[mode="markermodes"][level="subsequence"] [subsequence~="final"],
+main[mode="markermodes"][level="passage"] [passage~="final"],
+main[mode="markermodes"][level="part"] [part~="final"],
+main[mode="markermodes"][level="subpart"] [subpart~="final"],
+main[mode="markermodes"][level="piece"] [piece~="final"],
+main[mode="markermodes"][level="segment"] [segment~="final"],
+main[mode="markermodes"][level="member"] [segment~="final"],
+main[mode="markermodes"][level="term"] [segment~="final"],
+main[mode="markermodes"][level="word"] [segment~="final"],
+
+main[mode="markermodes"][level="book"] [book~="median"],
+main[mode="markermodes"][level="section"] [section~="median"],
+main[mode="markermodes"][level="subsection"] [subsection~="median"],
+main[mode="markermodes"][level="sequence"] [sequence~="median"],
+main[mode="markermodes"][level="subsequence"] [subsequence~="median"],
+main[mode="markermodes"][level="passage"] [passage~="median"],
+main[mode="markermodes"][level="part"] [part~="median"],
+main[mode="markermodes"][level="subpart"] [subpart~="median"],
+main[mode="markermodes"][level="piece"] [piece~="median"],
+main[mode="markermodes"][level="segment"] [segment~="median"],
+main[mode="markermodes"][level="member"] [segment~="median"],
+main[mode="markermodes"][level="term"] [segment~="median"],
+main[mode="markermodes"][level="word"] [segment~="median"],
+
+main[mode="markermodes"][level="book"] [book~="repeated"],
+main[mode="markermodes"][level="section"] [section~="repeated"],
+main[mode="markermodes"][level="subsection"] [subsection~="repeated"],
+main[mode="markermodes"][level="sequence"] [sequence~="repeated"],
+main[mode="markermodes"][level="subsequence"] [subsequence~="repeated"],
+main[mode="markermodes"][level="passage"] [passage~="repeated"],
+main[mode="markermodes"][level="part"] [part~="repeated"],
+main[mode="markermodes"][level="subpart"] [subpart~="repeated"],
+main[mode="markermodes"][level="piece"] [piece~="repeated"],
+main[mode="markermodes"][level="segment"] [segment~="repeated"],
+main[mode="markermodes"][level="member"] [segment~="repeated"],
+main[mode="markermodes"][level="term"] [segment~="repeated"],
+main[mode="markermodes"][level="word"] [segment~="repeated"]
+{
+    border: 2px solid black!important;
+}
+
+/*
+ * Borders of type similar to what is selected. (Checkbox on 6th toolbar)
+ */
+
+main[selectionlevelborders="true"][selectionlevel="book"]        book        { border: 1px dotted black; }
+main[selectionlevelborders="true"][selectionlevel="section"]     section     { border: 1px dotted black; }
+main[selectionlevelborders="true"][selectionlevel="subsection"]  subsection  { border: 1px dotted black; }
+main[selectionlevelborders="true"][selectionlevel="sequence"]    sequence    { border: 1px dotted black; }
+main[selectionlevelborders="true"][selectionlevel="subsequence"] subsequence { border: 1px dotted black; }
+main[selectionlevelborders="true"][selectionlevel="passage"]     passage     { border: 1px dotted black; }
+main[selectionlevelborders="true"][selectionlevel="part"]        part        { border: 1px dotted black; }
+main[selectionlevelborders="true"][selectionlevel="subpart"]     subpart     { border: 1px dotted black; }
+main[selectionlevelborders="true"][selectionlevel="piece"]       piece       { border: 1px dotted black; }
+main[selectionlevelborders="true"][selectionlevel="segment"]     segment     { border: 1px dotted black; }
+main[selectionlevelborders="true"][selectionlevel="member"]      member      { border: 1px dotted black; }
+main[selectionlevelborders="true"][selectionlevel="term"]        term        { border: 1px dotted black; }
+main[selectionlevelborders="true"][selectionlevel="word"]        word        { border: 1px dotted black; }
+
+/*
+ * level titles
+ */
+main book::before        { display: block; font-size: var(--fontsize); text-align: center; }
+main section::before     { display: block; font-size: var(--fontsize); text-align: center; }
+main subsection::before  { display: block; font-size: var(--fontsize); text-align: center; }
+main sequence::before    { display: block; font-size: var(--fontsize); text-align: center; }
+main subsequence::before { display: block; font-size: var(--fontsize); text-align: center; }
+main passage::before     { display: block; font-size: var(--fontsize); text-align: center; }
+main:is([level="book"],[level="section"],[level="subsection"],[level="sequence"],[level="subsequence"],[level="passage"]) passage::before { padding-bottom: var(--fontsize05); }
+/*
+ * en: English titles
+ */
+main:is([lang="gr"],[lang="en"]) book::before            { content: "Book"                                  }
+main:is([lang="gr"],[lang="en"]) book[en]::before        { content: "Book"                    ": " attr(en) }
+main:is([lang="gr"],[lang="en"]) section::before         { content: "Section "     attr(addr)               }
+main:is([lang="gr"],[lang="en"]) section[en]::before     { content: "Section "     attr(addr) ": " attr(en) }
+main:is([lang="gr"],[lang="en"]) subsection::before      { content: "Subsection "  attr(addr)               }
+main:is([lang="gr"],[lang="en"]) subsection[en]::before  { content: "Subsection "  attr(addr) ": " attr(en) }
+main:is([lang="gr"],[lang="en"]) sequence::before        { content: "Sequence "    attr(addr)               }
+main:is([lang="gr"],[lang="en"]) sequence[en]::before    { content: "Sequence "    attr(addr) ": " attr(en) }
+main:is([lang="gr"],[lang="en"]) subsequence::before     { content: "Subsequence " attr(addr)               }
+main:is([lang="gr"],[lang="en"]) subsequence[en]::before { content: "Subsequence " attr(addr) ": " attr(en) }
+main:is([lang="gr"],[lang="en"]) passage::before         { content: "Passage "     attr(addr)               }
+main:is([lang="gr"],[lang="en"]) passage[en]::before     { content: "Passage "     attr(addr) ": " attr(en) }
+/*
+ * es: Spanish titles
+ */
+main[lang="es"] book::before            { content: "Libro"                                  }
+main[lang="es"] book[es]::before        { content: "Libro"                    ": " attr(es) }
+main[lang="es"] section::before         { content: "Sección "      attr(addr)               }
+main[lang="es"] section[es]::before     { content: "Sección "      attr(addr) ": " attr(es) }
+main[lang="es"] subsection::before      { content: "Subsección "   attr(addr)               }
+main[lang="es"] subsection[es]::before  { content: "Subsección "   attr(addr) ": " attr(es) }
+main[lang="es"] sequence::before        { content: "Sequencia "    attr(addr)               }
+main[lang="es"] sequence[es]::before    { content: "Sequencia "    attr(addr) ": " attr(es) }
+main[lang="es"] subsequence::before     { content: "Subsequencia " attr(addr)               }
+main[lang="es"] subsequence[es]::before { content: "Subsequencia " attr(addr) ": " attr(es) }
+main[lang="es"] passage::before         { content: "Pasaje "       attr(addr)               }
+main[lang="es"] passage[es]::before     { content: "Pasaje "       attr(addr) ": " attr(es) }
+/*
+ * fr: French titles
+ */
+main[lang="fr"] book::before            { content: "Livre"                                 }
+main[lang="fr"] book[fr]::before        { content: "Livre"                   ": " attr(fr) }
+main[lang="fr"] section::before         { content: "Section "     attr(addr)               }
+main[lang="fr"] section[fr]::before     { content: "Section "     attr(addr) ": " attr(fr) }
+main[lang="fr"] subsection::before      { content: "Sousection "  attr(addr)               }
+main[lang="fr"] subsection[fr]::before  { content: "Sousection "  attr(addr) ": " attr(fr) }
+main[lang="fr"] sequence::before        { content: "Sequence "    attr(addr)               }
+main[lang="fr"] sequence[fr]::before    { content: "Sequence "    attr(addr) ": " attr(fr) }
+main[lang="fr"] subsequence::before     { content: "Subsequence " attr(addr)               }
+main[lang="fr"] subsequence[fr]::before { content: "Subsequence " attr(addr) ": " attr(fr) }
+main[lang="fr"] passage::before         { content: "Passage "     attr(addr)               }
+main[lang="fr"] passage[fr]::before     { content: "Passage "     attr(addr) ": " attr(fr) }
+/*
+ * it: Italian titles
+ */
+main[lang="it"] book::before            { content: "Libro"                                   }
+main[lang="it"] book[it]::before        { content: "Libro"                     ": " attr(it) }
+main[lang="it"] section::before         { content: "Sezione "       attr(addr)               }
+main[lang="it"] section[it]::before     { content: "Sezione "       attr(addr) ": " attr(it) }
+main[lang="it"] subsection::before      { content: "Sottosezione "  attr(addr)               }
+main[lang="it"] subsection[it]::before  { content: "Sottosezione "  attr(addr) ": " attr(it) }
+main[lang="it"] sequence::before        { content: "Sequenza "      attr(addr)               }
+main[lang="it"] sequence[it]::before    { content: "Sequenza "      attr(addr) ": " attr(it) }
+main[lang="it"] subsequence::before     { content: "Sottosequenza " attr(addr)               }
+main[lang="it"] subsequence[it]::before { content: "Sottosequenza " attr(addr) ": " attr(it) }
+main[lang="it"] passage::before         { content: "Passo "         attr(addr)               }
+main[lang="it"] passage[it]::before     { content: "Passo "         attr(addr) ": " attr(it) }
+/*
+ * pl: Polish titles
+ */
+main[lang="pl"] book::before            { content: "Księga"                                 }
+main[lang="pl"] book[pl]::before        { content: "Księga"                   ": " attr(pl) }
+main[lang="pl"] section::before         { content: "Sekcja "       attr(addr)               }
+main[lang="pl"] section[pl]::before     { content: "Sekcja "       attr(addr) ": " attr(pl) }
+main[lang="pl"] subsection::before      { content: "Podsekcja "    attr(addr)               }
+main[lang="pl"] subsection[pl]::before  { content: "Podsekcja "    attr(addr) ": " attr(pl) }
+main[lang="pl"] sequence::before        { content: "Sekwencja "    attr(addr)               }
+main[lang="pl"] sequence[pl]::before    { content: "Sekwencja "    attr(addr) ": " attr(pl) }
+main[lang="pl"] subsequence::before     { content: "Podsekwencja " attr(addr)               }
+main[lang="pl"] subsequence[pl]::before { content: "Podsekwencja " attr(addr) ": " attr(pl) }
+main[lang="pl"] passage::before         { content: "Fragment "     attr(addr)               }
+main[lang="pl"] passage[pl]::before     { content: "Fragment "     attr(addr) ": " attr(pl) }
+/*
+ * pt: Portuguese titles
+ */
+main[lang="pt"] book::before            { content: "Livro"                                  }
+main[lang="pt"] book[pt]::before        { content: "Livro"                    ": " attr(pt) }
+main[lang="pt"] section::before         { content: "Secção "       attr(addr)               }
+main[lang="pt"] section[pt]::before     { content: "Secção "       attr(addr) ": " attr(pt) }
+main[lang="pt"] subsection::before      { content: "Subsecção "    attr(addr)               }
+main[lang="pt"] subsection[pt]::before  { content: "Subsecção "    attr(addr) ": " attr(pt) }
+main[lang="pt"] sequence::before        { content: "Sequência "    attr(addr)               }
+main[lang="pt"] sequence[pt]::before    { content: "Sequência "    attr(addr) ": " attr(pt) }
+main[lang="pt"] subsequence::before     { content: "Subsequência " attr(addr)               }
+main[lang="pt"] subsequence[pt]::before { content: "Subsequência " attr(addr) ": " attr(pt) }
+main[lang="pt"] passage::before         { content: "Passagem "     attr(addr)               }
+main[lang="pt"] passage[pt]::before     { content: "Passagem "     attr(addr) ": " attr(pt) }
+
+/*
+ * display when visible
+ */
+main book,        main[visible] book[visible]        { display: block; }
+main section,     main[visible] section[visible]     { display: block; }
+main subsection,  main[visible] subsection[visible]  { display: block; }
+main sequence,    main[visible] sequence[visible]    { display: block; }
+main subsequence, main[visible] subsequence[visible] { display: block; }
+main passage,     main[visible] passage[visible]     { display: block; }
+main part,        main[visible] part[visible]        { display: block; }
+main subpart,     main[visible] subpart[visible]     { display: inline flow-root; width: 100%; }
+main piece,       main[visible] piece[visible]       { display: inline flow-root; }
+main segment,     main[visible] segment[visible]     { display: inline flow-root; }
+main member,      main[visible] member[visible]      { display: inline flow-root; }
+main term,        main[visible] term[visible]        { display: inline flow-root; padding-right: var(--fontsize02); }
+/*
+ * display when nonvisible
+ */
+main[visible] :is(book, section, subsection, sequence, subsequence, passage, part, subpart, piece, segment, member, term):is(:not([visible])) { display: none!important; }
+
+/*
+ * The structure when level >= passage
+ */
+main:is([level="book"],[level="section"],[level="subsection"],[level="sequence"],[level="subsequence"],[level="passage"]) passage,
+main:is([level="book"],[level="section"],[level="subsection"],[level="sequence"],[level="subsequence"],[level="passage"])[visible] passage[visible]
+{
+    margin: var(--fontsize05) 0; padding: var(--fontsize05); border: 1px solid black;
+}
+
+/*
+ * Summaries
+ */
+main[level="book"][summary="true"] section *       { display: none; }
+main[level="book"][summary="true"] section         { padding: var(--fontsize05); margin: var(--fontsize05); border: solid 1px black; }
+main[level="book"][summary="true"] section::before { text-align: left; }
+
+main:is([level="section"],[level="subsection"])[summary="true"] sequence *       { display: none; }
+main:is([level="section"],[level="subsection"])[summary="true"] subsection       { margin: var(--fontsize05) 0; border: dashed 1px black; }
+main:is([level="section"],[level="subsection"])[summary="true"] sequence         { padding: var(--fontsize05); margin: var(--fontsize05); border: solid 1px black; }
+main:is([level="section"],[level="subsection"])[summary="true"] sequence::before { text-align: left; }
+
+main:is([level="sequence"],[level="subsequence"])[summary="true"] passage *       { display: none; }
+main:is([level="sequence"],[level="subsequence"])[summary="true"] subsequence     { margin: var(--fontsize05) 0; border: dashed 1px black; }
+main:is([level="sequence"],[level="subsequence"])[summary="true"] passage         { padding: var(--fontsize05); margin: var(--fontsize05); border: solid 1px black; }
+main:is([level="sequence"],[level="subsequence"])[summary="true"] passage::before { text-align: left; }
+
+main[level="subsequence"][summary="true"] subsequence *       { display: none; }
+main[level="subsequence"][summary="true"] subsequence         { padding: var(--fontsize); margin: var(--fontsize02); border: solid 1px black; }
+main[level="subsequence"][summary="true"] subsequence::before { text-align: left; }
+
+main[level="passage"] passage,                             main[level="passage"][visible] passage[visible]                             { border: none; margin: 0; padding: 0; }
+main[level="passage"] part,                                main[level="passage"][visible] part[visible]                                { border: 1px solid black; border-bottom: none; padding: var(--fontsize05); }
+main[level="passage"] part:last-of-type,                   main[level="passage"][visible] part:last-of-type[visible]                   { border-bottom: 1px solid black; }
+main[level="passage"] subpart,                             main[level="passage"][visible] subpart[visible]                             { display: block; }
+main[level="passage"] piece,                               main[level="passage"][visible] piece[visible]                               { display: inline flow-root; }
+main[level="passage"] segment,                             main[level="passage"][visible] segment[visible]                             { display: inline flow-root; }
+main[level="passage"] member,                              main[level="passage"][visible] member[visible]                              { display: inline flow-root; }
+main[level="passage"] term,                                main[level="passage"][visible] term[visible]                                { display: inline flow-root; padding-right: var(--fontsize02); }
+main[level="passage"][spread="true"] passage,              main[level="passage"][spread="true"][visible] passage[visible]              { display: block; }
+main[level="passage"][spread="true"] part,                 main[level="passage"][spread="true"][visible] part[visible]                 { display: block; border: 1px solid black; margin: var(--fontsize05) 0; padding: 0; }
+main[level="passage"][spread="true"] subpart,              main[level="passage"][spread="true"][visible] subpart[visible]              { display: block; border-bottom: 1px solid black;}
+main[level="passage"][spread="true"] subpart:last-of-type, main[level="passage"][spread="true"][visible] subpart:last-of-type[visible] { display: block; border-bottom: none;}
+main[level="passage"][spread="true"] piece,                main[level="passage"][spread="true"][visible] piece[visible]                { display: block; border-bottom: 1px dotted black; }
+main[level="passage"][spread="true"] piece:last-of-type,   main[level="passage"][spread="true"][visible] piece:last-of-type[visible]   { display: block; border-bottom: none; }
+main[level="passage"][spread="true"] segment,              main[level="passage"][spread="true"][visible] segment[visible]              { display: flex; flex-flow: row nowrap; padding: 0 var(--fontsize05); }
+main[level="passage"][spread="true"] member,               main[level="passage"][spread="true"][visible] member[visible]               { display: block; padding: 0 var(--fontsize05); width: 30%; }
+main[level="passage"][spread="true"] term,                 main[level="passage"][spread="true"][visible] term[visible]                 { display: inline flow-root; padding-right: var(--fontsize02); }
+
+main[level="passage"][summary="true"]       passage *       { display: none; }
+main[level="passage"][summary="true"]       passage         { height: var(--fontsize); padding: var(--fontsize); margin: var(--fontsize02); border: solid 1px black; }
+main[level="passage"][summary="true"][lang] passage::before { text-align: left; }
+
+main[level="part"] part,                   main[level="part"][visible] part[visible]                    { border: 1px solid black; margin: var(--fontsize05) 0; }
+main[level="part"] subpart,                main[level="part"][visible] subpart[visible]                 { display: block; border-bottom: 1px solid black;}
+main[level="part"] subpart:last-of-type,   main[level="part"][visible] subpart:last-of-type[visible]    { display: block; border-bottom: none;}
+main[level="part"] piece,                  main[level="part"][visible] piece[visible]                   { display: block; border-bottom: 1px dotted black; }
+main[level="part"] piece:last-of-type,     main[level="part"][visible] piece:last-of-type[visible]      { display: block; border-bottom: none; }
+main[level="part"][spread="true"] segment, main[level="part"][spread="true"][visible] segment[visible]  { display: block; padding: var(--fontsize05) 0; }
+main[level="part"][spread="true"] member,  main[level="part"][spread="true"][visible] member[visible]   { display: block; padding: 0 var(--fontsize05); width: inherit; }
+main[level="part"][spread="true"] term,    main[level="part"][spread="true"][visible] term[visible]     { display: inline flow-root; width: var(--termwidth); }
+main[level="part"] segment,                main[level="part"][visible] segment[visible]                 { display: flex; flex-flow: row nowrap; padding: 0 var(--fontsize05); }
+main[level="part"] member,                 main[level="part"][visible] member[visible]                  { display: block; padding: 0 var(--fontsize05); width: 30%; }
+main[level="part"] term,                   main[level="part"][visible] term[visible]                    { display: inline flow-root; padding-right: var(--fontsize02); }
+
+main[level="subpart"] part,                   main[level="subpart"][visible] part[visible]                   { display: block; border: 1px solid black; margin: var(--fontsize05) 0; }
+main[level="subpart"] part:has(> subpart),    main[level="subpart"][visible] part[visible]:has(> subpart)    { display: block; border: 0; margin: 0; }
+main[level="subpart"] subpart,                main[level="subpart"][visible] subpart[visible]                { display: block; border: 1px solid black; margin: var(--fontsize05) 0; }
+main[level="subpart"] piece,                  main[level="subpart"][visible] piece[visible]                  { display: block; border-bottom: 1px dotted black; }
+main[level="subpart"] piece:last-of-type,     main[level="subpart"][visible] piece:last-of-type[visible]     { display: block; border-bottom: none; }
+main[level="subpart"][spread="true"] segment, main[level="subpart"][spread="true"][visible] segment[visible] { display: block; padding: var(--fontsize05) 0; }
+main[level="subpart"][spread="true"] member,  main[level="subpart"][spread="true"][visible] member[visible]  { display: block; padding: 0 var(--fontsize05); width: inherit; }
+main[level="subpart"][spread="true"] term,    main[level="subpart"][spread="true"][visible] term[visible]    { display: inline flow-root; width: var(--termwidth); }
+main[level="subpart"] segment,                main[level="subpart"][visible] segment[visible]                { display: flex; flex-flow: row nowrap; padding: 0 var(--fontsize05); }
+main[level="subpart"] member,                 main[level="subpart"][visible] member[visible]                 { display: block; padding: 0 var(--fontsize05); width: 30%; }
+main[level="subpart"] term,                   main[level="subpart"][visible] term[visible]                   { display: inline flow-root; padding-right: var(--fontsize02); }
+
+main[level="piece"] part,        main[level="piece"][visible] part[visible]        { display: block; }
+main[level="piece"] subpart,     main[level="piece"][visible] subpart[visible]     { display: block; }
+main[level="piece"] piece,       main[level="piece"][visible] piece[visible]       { display: block; margin: var(--fontsize05) 0; border-top: 1px solid black; border-bottom: 1px solid black; }
+main[level="piece"] segment,     main[level="piece"][visible] segment[visible]     { display: block; padding: var(--fontsize05) 0; }
+main[level="piece"] member,      main[level="piece"][visible] member[visible]      { display: block; padding: 0 var(--fontsize05); }
+main[level="piece"] term,        main[level="piece"][visible] term[visible]        { display: inline flow-root; width: var(--termwidth); }
+
+main[level="segment"] part,        main[level="segment"][visible] part[visible]        { display: block; }
+main[level="segment"] subpart,     main[level="segment"][visible] subpart[visible]     { display: block; }
+main[level="segment"] piece,       main[level="segment"][visible] piece[visible]       { display: block; }
+main[level="segment"] segment,     main[level="segment"][visible] segment[visible]     { display: block; padding: var(--fontsize05) 0; }
+main[level="segment"] member,      main[level="segment"][visible] member[visible]      { display: block; padding: 0 var(--fontsize05); }
+main[level="segment"] term,        main[level="segment"][visible] term[visible]        { display: inline flow-root; width: var(--termwidth); }
+
+main[level="member"] part,        main[level="member"][visible] part[visible]        { display: block; }
+main[level="member"] subpart,     main[level="member"][visible] subpart[visible]     { display: block; }
+main[level="member"] piece,       main[level="member"][visible] piece[visible]       { display: block; }
+main[level="member"] segment,     main[level="member"][visible] segment[visible]     { display: block; }
+main[level="member"] member,      main[level="member"][visible] member[visible]      { display: block; padding: 0 var(--fontsize05); }
+main[level="member"] term,        main[level="member"][visible] term[visible]        { display: inline flow-root; width: var(--termwidth); }
+
+main[level="term"] part,        main[level="term"][visible] part[visible]        { display: block; }
+main[level="term"] subpart,     main[level="term"][visible] subpart[visible]     { display: block; }
+main[level="term"] piece,       main[level="term"][visible] piece[visible]       { display: block; }
+main[level="term"] segment,     main[level="term"][visible] segment[visible]     { display: block; }
+main[level="term"] member,      main[level="term"][visible] member[visible]      { display: block; }
+main[level="term"] term,        main[level="term"][visible] term[visible]        { display: block; width: 100%; }
+
+main[level="word"] part,        main[level="word"][visible] part[visible]        { display: block; }
+main[level="word"] subpart,     main[level="word"][visible] subpart[visible]     { display: block; }
+main[level="word"] piece,       main[level="word"][visible] piece[visible]       { display: block; }
+main[level="word"] segment,     main[level="word"][visible] segment[visible]     { display: block; }
+main[level="word"] member,      main[level="word"][visible] member[visible]      { display: block; }
+main[level="word"] term,        main[level="word"][visible] term[visible]        { display: block; }
+main[level="word"] word,        main[level="word"][visible] word[visible]        { display: block; }

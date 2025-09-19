@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="app.css">
+    <style>
+      div#toppanel {
+          height: 300px;
+      }
+      textarea {
+          height: 290px;
+          width: 100%;
+      }
+      main {
+          top: 300px;
+      }
+    </style>
+    <script src="app.js"></script>
+    <script src="ognt.js"></script>
+  </head>
+  <body id="body" onload="initOgntApp()">
+    <div id="toppanel" class="flexrow">
+      <textarea id="ognttextarea"></textarea>
+      <button onclick="parseOgnt()" title="parseOgnt()">parse&gt;&gt;&gt;</button>
+      <textarea id="textarea"></textarea>
+    </div>
+    <main id="main">
+    </main>
+  </body>
+</html>

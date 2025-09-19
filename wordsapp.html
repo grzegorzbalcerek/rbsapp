@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js"></script>
+    <script src="words.js"></script>
+    <style>
+      main { top: 210px; }
+      textarea {
+          margin: 0;
+          height: 200px;
+          width: 50%!important;
+          resize: horizontal;
+      }
+      div#wordsdiv { width: 50%; }
+    </style>
+  </head>
+  <body id="body" onload="initTranslationApp()">
+    <div id="toppanel" class="flexrow">
+      <select id="langselect" onclick="langSelected()" title="Select language langSelected()"> </select>
+      <textarea id="textarea"></textarea>
+      <textarea id="initialtextarea"></textarea>
+      <textarea id="wordstextarea"></textarea>
+      <button onclick="parseWords()" title="parseWords()">parse&gt;&gt;&gt;</button>
+    <div id="wordsdiv" style="background-color: yellow"></div>
+    </div>
+    <main id="main" level="book">
+    </main>
+  </body>
+</html>
